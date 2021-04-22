@@ -1,0 +1,283 @@
+
+/*
+==============================
+RIGHT TO LEFT - RTL
+==============================
+*/
+
+.text-left, .advs-box-side-icon p, .progress-label, .progress, .advs-box.advs-box-side p, .advs-box-multiple p, .advs-box-side-img h2, .niche-box-post h2, .niche-box-post p,
+.niche-box-blog p, .niche-box-blog {
+    text-align: right !important;
+    direction: rtl;
+}
+
+h2, h4, h3, h5, h6 {
+    direction: rtl;
+}
+
+input, span, div, .dropdown-menu > li > a, .lan-menu li a, .adv-img p, .adv-img h2, .adv-img h3, .advs-box-multiple h3, .advs-box-multiple h2, .advs-box-side-img p {
+    text-align: right;
+    direction: rtl;
+}
+
+.flexslider, .flexslider *, .btn, .anima-button, .btn-text, .btn-group > .btn, .input-group, .popover > .arrow {
+    direction: ltr !important;
+}
+
+.progress-bar, .navbar-header, .navbar-brand, .adv-img-side-content a, .social-feed-fb li .media .media-meta {
+    float: right !important;
+}
+
+.navbar-nav, .subline-bar ul li {
+    float: right !important;
+    direction: ltr;
+}
+
+.navbar-nav {
+    margin-right: 15px;
+}
+
+.album-title .btn {
+    margin-right: 15px;
+    margin-left: 0 !important;
+}
+
+.progress-bar > span {
+    text-align: left !important;
+    float: left !important;
+    padding-left: 5px;
+}
+
+.list-items .list-item span {
+    text-align: left;
+}
+
+div .call-action-box [class*="col-"]:last-child {
+    text-align: left !important;
+}
+
+.side-menu i, .tab-box.right .panel-box, .tab-box.right .nav-tabs, .tab-box.left .nav-tabs, .tab-box.right .nav-tabs, .tab-box.left .panel-box {
+    text-align: left !important;
+    float: left !important;
+}
+
+.section-two-blocks .content, .timeline-body > p, .advs-box-multiple .advs-box-content {
+    text-align: right !important;
+}
+
+.inner-center, .progress-circle .main, .inner-center .subtitle, .footer-center div, .adv-img-full-content .caption .inner, .adv-img-full-content h2, .adv-img-full-content p,
+.adv-img-button-content h2, .adv-img-button-content p, .adv-img-down-text h2, .adv-img-down-text p, .advs-box-top-icon-img h3, .advs-box-top-icon-img h2, .advs-box-multiple div.circle span,
+.title-base.text-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block-infos p, .text-center * {
+    text-align: center !important;
+}
+
+@media (min-width: 992px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .navbar-nav > li {
+        float: right !important;
+    }
+
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+        margin-left: 0;
+        margin-right: -15px;
+    }
+}
+
+.fa-ul {
+    margin-left: 0;
+}
+
+    .fa-ul .fa-li {
+        right: -38px;
+        text-align: right;
+        left: auto;
+    }
+
+.title-modern .scroll-top, .title-base .scroll-top, .title-modern .scroll-top {
+    left: 0;
+    right: auto;
+}
+
+.dropdown-menu, .social-feed-fb li .meta-header .avatar {
+    right: 0 !important;
+    left: auto !important;
+}
+
+.title-base.text-left hr {
+    margin: 0 0 20px auto;
+}
+
+.advs-box-side-icon .icon-box {
+    padding-left: 45px;
+    padding-right: 0;
+}
+
+.icon-box label, .icon-box-cell p, .niche-box-testimonails-cloud .name-box .subtitle {
+    padding-left: 0 !important;
+    padding-right: 15px !important;
+}
+
+.icon-box-right .icon-box-cell label, .icon-box-right .icon-box-cell p {
+    padding-left: 15px;
+    padding-right: 0;
+    text-align: left;
+}
+
+.section-two-blocks > .row > .col-md-6:last-child .content, .section-two-blocks > .row > .col-md-5 .content {
+    padding-left: 0 !important;
+    padding-right: 50px !important;
+}
+
+.section-two-blocks.blocks-right > .row > .col-md-5 .content, .section-two-blocks.blocks-right > .row > .col-md-6:last-child .content {
+    padding-right: 0 !important;
+    padding-left: 50px !important;
+}
+
+.section-two-blocks.blocks-right > .row > .col-md-5, .section-two-blocks.blocks-right > .row > .col-md-5 .content, .section-two-blocks.blocks-right > .row > .col-md-6,
+.section-two-blocks.blocks-right > .row > .col-md-6 .content, .section-two-blocks.blocks-right > .row > .col-md-7, .section-two-blocks.blocks-right > .row > .col-md-7 .content,
+.header-bootstrap .breadcrumb, .header-base .breadcrumb {
+    float: left !important;
+}
+header .side-menu .fa.arrow:before, ul ul .dropdown-toggle:after {
+    float: left;
+    transform: rotate(-90deg);
+    margin-right: 0;
+    margin-left: -5px;
+}
+div .navbar-right {
+    float: left !important;
+    margin-right: 0;
+    margin-left: -15px;
+}
+
+ul.list-texts {
+    padding-right: 0;
+}
+
+div:not(.hc_column_cnt) > table tr:first-child > th {
+    padding-right: 15px;
+    padding-left: 0;
+    text-align: right;
+}
+
+.bootgrid-header .search, .bootgrid-footer .search {
+    margin: 0 0 0 20px !important;
+}
+
+.pagination {
+    float: left;
+    display: flex;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    left: auto !important;
+    right: 100% !important;
+    box-shadow: -5px 4px 5px rgba(0,0,0,0.1) !important;
+}
+
+.dropdown-submenu > a:after {
+    display: none;
+}
+
+.side-menu .arrow {
+    margin-right: 15px;
+    float: left;
+}
+
+.lan-menu a img {
+    margin: -2px 0 0 5px;
+}
+
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+    margin-right: -1px;
+}
+
+.navbar-default .navbar-nav > li > a .caret {
+  float: left;
+    display: inline-block;
+    margin-top: -10px;
+    margin-left: -28px;
+    transform: rotate(-44deg);
+}
+
+.navbar-main.navbar-middle ul.nav > li, div .col-center {
+    float: none !important;
+}
+
+.navbar-main.navbar-middle ul.nav {
+    width: 100%;
+}
+
+.side-menu .plus-minus, .side-menu .plus-times {
+    float: left;
+}
+
+.datepicker-dropdown {
+    margin-left: 15px;
+}
+
+.advs-box-side.boxed .col-md-4 {
+    margin: -25px -25px -25px 0;
+}
+
+.advs-box-multiple div.circle {
+    left: 10px;
+    right: auto !important;
+}
+
+.advs-box-multiple h3 {
+    padding-right: 0 !important;
+    padding-left: 100px;
+}
+
+.tag-row {
+    display: flex;
+}
+
+    .tag-row i {
+        margin-left: 15px !important;
+        margin-right: 0 !important;
+        padding-right: 0;
+    }
+
+    .tag-row span {
+        margin: 0 0 0 15px;
+        padding: 0 0 0 15px;
+    }
+
+    .tag-row.icon-row span:after {
+        margin: -13px 12px 0 0;
+    }
+
+.block-infos {
+    padding-right: 0 !important;
+}
+
+div .social-feed-fb li {
+    padding: 0 72px 10px 10px;
+}
+
+.social-feed-fb li .media .image {
+    margin-right: 0 !important;
+    margin-left: 10px;
+    float: right !important;
+}
+
+.fb-container, .social-feed-tw .tweets_txt {
+    padding-left: 0 !important;
+    padding-right: 72px !important;
+}
+
+.social-feed-tw ul.slides li > a {
+    width: 65px !important;
+    right: 0;
+}
+.search-box input[type="submit"] {
+        left: 20px;
+            right: auto;
+}
