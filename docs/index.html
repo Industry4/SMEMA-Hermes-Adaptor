@@ -42,11 +42,11 @@
 									<a href="#">Home</a>							
 								</li>	
 								<li>
-									<a href="#">Datasheet</a>							
+									<a href="datasheets/SMEMA-Hermes-Adaptor-Mk3SL45-Datasheet.pdf" target="_blank">Datasheet</a>							
 								</li>	
 								
 								<li>
-									<a href="#">Support</a>							
+									<a href="https://github.com/Industry4/SMEMA-Hermes-Adaptor/wiki" target="_blank">Support</a>							
 								</li>
 								<li>
 									<a href="https://store.4ir.uk">Buy</a>							
@@ -58,7 +58,7 @@
             </div>
         </div>
     </header>
-    <div class="section-bg-image parallax-window white ken-burn-center" data-natural-height="1080" data-natural-width="1920" data-parallax="scroll" data-image-src="images/Europlacer-Hermes-Adaptor.png">
+    <div class="section-bg-image parallax-window white ken-burn-center" data-natural-height="1080" data-natural-width="1920" data-parallax="scroll" data-image-src="images/Europlacer-Hermes-Adaptor.jpg">
         <div class="container content">
             <hr class="space" />
             <hr class="space" />
@@ -105,7 +105,7 @@
                 </div>
                 <div class="col-md-9">
                     <p>
-The Hermes Standard is a successor of SMEMA (IPC-SMEMA-9851) replacing simple opening and closing of circuits and dedicated wiring to define Ready messages, with XML messages sent via ethernet. 
+The Hermes Standard is a successor of SMEMA (IPC-SMEMA-9851) replacing simple opening and closing of circuits and dedicated wiring to define Ready signals, with XML messages sent via ethernet. 
 </p><p>
 The use of XML means not only control messages can be sent between manufacturing equipment but also printed circuit board (PCB) data for automatic equipment setup and product traceability.
 </p>
@@ -122,7 +122,7 @@ The use of XML means not only control messages can be sent between manufacturing
                     <p>
 The SMEMA Hermes Adaptor is connected to both the Upline and Downline SMEMA connectors of the targeted non-Hermes compliant assembly equipment. This equipment believes it is communicating with Upline and Downline equipment in the normal SMEMA manner. 
 </p><p>
-The Adaptor then takes the Upline Hermes control messages and converts them into SMEMA. It does the same with the Downline SMEMA connector of the non-Hermes compliant assembly equipment but in reverse by converting the SMEMA ‘Good Board’ and ‘Bad Board’ messages into Hermes messages for Downline equipment. 
+The Adaptor then takes the Upline Hermes control messages and converts them into SMEMA signals. It does the same with the Downline SMEMA connector of the non-Hermes compliant assembly equipment but in reverse by converting the SMEMA ‘Good Board’ and ‘Bad Board’ signals into Hermes messages for Downline equipment. 
 </p><p>
 While this sequence occurs the Adaptor stores the Hermes PCB data so it’s not lost for onward travel down the production line. The PCB data is then re-paired with exiting PCBs on a First In, First Out (FIFO) basis and Good Board, Bad Board data updated.
 </p><p>                   
@@ -180,7 +180,7 @@ Navigate to the lower half of this page to discover other uses for the Adaptor.
 					        
                     <ul class="fa-ul text-s ul-dots">
                         <li>Single Lane SMT Assembly Production (Dual Lane on request)</li>
-                        <li>100w x 200d x 1000h - Weight</li>
+                        <li>Length 109 x Width 62 x Height 55 - Weight 227 grams</li>
 						<li>2GB RAM, 32GB Storage, Linux Single-Board Computer</li>				
                         <li>5 Volt Supply via USB-C - optional industrial 24v stepdown</li>
                         <li>RJ12 Plug to SMEMA Plug or Socket Dongles (optional accessory)</li>						
@@ -243,7 +243,7 @@ The MultiPlug uses the Publish–Subscribe design pattern where events are mappe
 						<li>Native Browser based User Interface</li>
                         <li>REST APIs</li>
                     </ul>
-					<a href="https://www.multiplug.app" class="btn btn-sm">Learn more about the MultiPlug Edge Computing Platform</a>	
+					<a href="https://www.multiplug.app" target="_blank" class="btn btn-sm">Info: MultiPlug Edge Computing Platform</a>	
                 </div>
                     			
 				
@@ -251,7 +251,7 @@ The MultiPlug uses the Publish–Subscribe design pattern where events are mappe
 
         </div>
     </div>
-    <div class="section-bg-image parallax-window white" data-natural-height="1080" data-natural-width="1920" data-parallax="scroll" data-image-src="images/Speedprint-Hermes-Adaptor.png">
+    <div class="section-bg-image parallax-window white" data-natural-height="1080" data-natural-width="1920" data-parallax="scroll" data-image-src="images/Speedprint-Hermes-Adaptor.jpg">
         <div class="container content">
             <div class="row vertical-row">
 			<hr class="space" />
@@ -272,7 +272,7 @@ The MultiPlug uses the Publish–Subscribe design pattern where events are mappe
                 </div>
                 <div class="col-md-8">
                     <p>
-During the development of the Adaptor we have been approached by equipment suppliers who either wanted to support existing legacy equipment in the field on behalf of their customers or were interested in keeping the Hermes Standard upgrade solution modular but seen to be part of their existing offering. 
+During the development of the Adaptor we have been approached by equipment suppliers who either want to support existing legacy equipment in the field on behalf of their customers or were interested in keeping the Hermes Standard upgrade solution modular but seen to be part of their existing offering. 
 </p><p>
 We can supply the Adaptor in an unenclosed raw state which can be mounted as you see fit and wired using the RJ12 connectors. It is also possible to directly interface with the Single-Board Computer which means you wouldn’t use our SMEMA interface hardware however you, and your customers would benefit from the Hermes MultiPlug software and ongoing support. 
 </p><p>
@@ -302,7 +302,7 @@ Dual Lane options are available on request. White labeling is also available.
                     <p>
 It may be useful to pause a production line due to an unrelated Hermes situation and rather than stop the equipment locally, a remote stop triggered by a remote user action or third party system. This is possible using the REST API which can control all SMEMA I/O as well as using the Web Browser based user interface.
 </p><p>
-Also while the Hermes Standard intended to try to remove the need for Barcode Readers, it is possible to connect a barcode reader to the Adaptor to use it to double check that the board on Conveyor is the same as the PCB ID of Hermes. SMEMA will interlock if the IDs are mismatched.
+Also while the Hermes Standard intended to try to remove the need for Barcode Readers, it is possible to connect a barcode reader to the Adaptor to use it to double check that the board on the Conveyor is the same as the PCB ID of Hermes. SMEMA will interlock if the IDs are mismatched.
                     </p>
                 </div>
             </div>
@@ -344,22 +344,22 @@ The state of these I/O can then be mapped within MultiPlug to trigger off other 
                         </a>
                     </li>
                     <li>
-                        <a class="img-box" href="https://aub.ac.uk/">
+                        <a class="img-box" href="https://aub.ac.uk/industry/supporting-dorset-business" target="_blank">
                             <img src="images/logos/arts-university-bournemouth.png" alt="">
                         </a>
                     </li>
                     <li>
-                        <a class="img-box" href="https://labs.uk.barclays/locations/bournemouth/">
+                        <a class="img-box" href="https://labs.uk.barclays/locations/bournemouth/" target="_blank">
                             <img src="images/logos/barclays-eagle-labs-bournemouth.png" alt="">
                         </a>
                     </li>
                     <li>
-                        <a class="img-box" href="https://www.4ir.uk">
+                        <a class="img-box" href="https://www.4ir.uk" target="_blank">
                             <img src="images/logos/4ir-uk-british-systems.png" alt="">
                         </a>
                     </li>
                     <li>
-                        <a class="img-box" href="https://www.ctproduction.co.uk/">
+                        <a class="img-box" href="https://www.ctproduction.co.uk/" target="_blank">
                             <img src="images/logos/ct-production-poole.png" alt="">
                         </a>
                     </li>
@@ -371,7 +371,7 @@ The state of these I/O can then be mapped within MultiPlug to trigger off other 
                     <p>
 The project of creating the Adaptor has only been made possible by the collaboration between investors, suppliers and innovators.
 </p><p>
-It started in 2019 with no customer backer or even contact by the Hermes Standard committee. It’s only thanks to visionaries that identified a limitation of rolling out Hermes to the masses with legacy equipment. A Startup business with founders who had previously worked within the industry was ideally placed and keen to enter the market with a new product. An initial prototype was developed with support of the Barclays Eagle Labs, Westbourne and rolled out to a number of beta sites to begin trials. With these trials successful and feedback gained European Regional Development Match Funding was secured after attending an business pitch event in Poole, Dorset. This funding was administered by the Arts University Bournemouth who also provided access to prototyping facilities for further development. In 2021 an electronics contract manufacturer in Poole assembled the first batch of Mk3 Adaptors ready for increasingly growing customer demand.
+It started in 2019 with no customer backer or even contact of the Hermes Standard committee. It’s only thanks to visionaries that identified a limitation of rolling out Hermes to the masses with legacy equipment. A Startup business with founders who had previously worked within the industry was ideally placed and keen to enter the market with a new product. An initial prototype was developed with support of the Barclays Eagle Labs, Westbourne and rolled out to a number of beta sites to begin trials. With these trials successful and feedback gained European Regional Development Match Funding was secured after attending an business pitch event in Poole, Dorset. This funding was administered by the Arts University Bournemouth who also provided access to prototyping facilities for further development. In 2021 an electronics contract manufacturer in Poole assembled the first batch of Mk3 Adaptors ready for increasingly growing customer demand.
 </p>
                     </p>
                 </div>
@@ -384,7 +384,7 @@ It started in 2019 with no customer backer or even contact by the Hermes Standar
            	
 	
 	
-    <div class="section-bg-image parallax-window white" data-natural-height="929" data-natural-width="1920" data-parallax="scroll" data-image-src="images/Made-In-Dorset.png">
+    <div class="section-bg-image parallax-window white" data-natural-height="929" data-natural-width="1920" data-parallax="scroll" data-image-src="images/Made-In-Dorset.jpg">
         <div class="container content">
             <div class="row vertical-row">
 			<hr class="space" />
@@ -422,10 +422,10 @@ It started in 2019 with no customer backer or even contact by the Hermes Standar
                     <h3 class="text-black text-uppercase">Useful resources</h3>
                     <hr class="space space-30" />
                     <div class="footer-menu text-s">
-                        <a href="#">DATASHEET</a>
-                        <a href="#">TECHNICAL SUPPORT</a>
+                        <a href="datasheets/SMEMA-Hermes-Adaptor-Mk3SL45-Datasheet.pdf" target="_blank">DATASHEET</a>
+                        <a href="https://github.com/Industry4/SMEMA-Hermes-Adaptor/wiki" target="_blank">TECHNICAL SUPPORT</a>
                         <a href="https://store.4ir.uk">BUY A SMEMA HERMES ADAPTOR</a>
-                        <a href="https://www.the-hermes-standard.info/">THE HERMES STANDARD WEBSITE</a>
+                        <a href="https://www.the-hermes-standard.info/" target="_blank">THE HERMES STANDARD WEBSITE</a>
                     </div>
                 </div>
             </div>
