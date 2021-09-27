@@ -1,0 +1,224 @@
+{
+  "assembly": "MultiPlug.Ext.Brainboxes",
+  "properties": {
+    "Devices": [
+      {
+        "ConnectButtonEvent": {
+          "Guid": "c595362c-7e5f-4225-88b7-53519076ab85",
+          "Id": "f6a3a361-5c4d-4682-98f0-a6d707aafd7d",
+          "Description": "System Event: Connect to device",
+          "Subjects": [],
+          "Keys": []
+        },
+        "RestartButtonEvent": {
+          "Guid": "60792d38-703d-4559-8ec5-8ac3733bf0be",
+          "Id": "c185aea1-f47f-4a47-9a4a-66ab53d775aa",
+          "Description": "System Event: Restart the device",
+          "Subjects": [],
+          "Keys": []
+        },
+        "Name": "RelayIO",
+        "IP": "192.168.1.23",
+        "Guid": "2e7aba6a-6546-4d15-953e-602565b83eff",
+        "MACAddress": "000A4F057C5E",
+        "AutoConnect": true,
+        "Outputs": [
+          {
+            "Name": "0",
+            "Subscriptions": [
+              {
+                "HighSubject": "value",
+                "HighValue": "1",
+                "LowSubject": "value",
+                "LowValue": "0",
+                "Guid": "36a89735-dbaf-49ae-8b33-ba614557805b",
+                "Id": "UIToggle708ef14c-1357-4733-9b92-191c63a8999d",
+                "Subjects": [
+                  0
+                ]
+              },
+              {
+                "HighSubject": "value",
+                "HighValue": "1",
+                "LowSubject": "value",
+                "LowValue": "0",
+                "Guid": "d4c1ae1c-784c-4398-9a41-6df7da5f7ba0",
+                "Id": "SMEMAMachineReady:Machine:Conveyor:Lane:1",
+                "Subjects": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "Name": "1",
+            "Subscriptions": [
+              {
+                "HighSubject": "value",
+                "HighValue": "1",
+                "LowSubject": "value",
+                "LowValue": "0",
+                "Guid": "878cd947-4e5c-4414-9808-b44530fc6dbf",
+                "Id": "UIToggle61e3a211-1a44-42ff-a52b-bc889bafc573",
+                "Subjects": [
+                  0
+                ]
+              },
+              {
+                "HighSubject": "value",
+                "HighValue": "1",
+                "LowSubject": "value",
+                "LowValue": "0",
+                "Guid": "9980a65e-aeb1-4fc7-a545-a2c8b477dc80",
+                "Id": "SMEMAFailedBoardAvailable:Machine:Conveyor:Lane:1",
+                "Subjects": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "Name": "2",
+            "Subscriptions": [
+              {
+                "HighSubject": "value",
+                "HighValue": "1",
+                "LowSubject": "value",
+                "LowValue": "0",
+                "Guid": "4251bc66-beaa-4778-9085-c117d5004730",
+                "Id": "UIToggle1106b027-a13d-4181-bb6f-0daf52472274",
+                "Subjects": [
+                  0
+                ]
+              },
+              {
+                "HighSubject": "value",
+                "HighValue": "1",
+                "LowSubject": "value",
+                "LowValue": "0",
+                "Guid": "e53948ad-6257-4c4c-99aa-507a3a8db092",
+                "Id": "SMEMABoardAvailable:Machine:Conveyor:Lane:1",
+                "Subjects": [
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "IOEvents": [
+          {
+            "IONumber": 0,
+            "RisingEdgeValue": "1",
+            "FallingEdgeValue": "0",
+            "Guid": "37de499d-c29a-441d-aa0a-cb86613ed69c",
+            "Id": "SMEMA-1-B-2",
+            "Description": "Bad PCB",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          {
+            "IONumber": 1,
+            "RisingEdgeValue": "1",
+            "FallingEdgeValue": "0",
+            "Guid": "2fce23a4-3435-4214-84e0-6b5afcd4f27f",
+            "Id": "SMEMA-1-B-1",
+            "Description": "Good PCB",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          {
+            "IONumber": 2,
+            "RisingEdgeValue": "1",
+            "FallingEdgeValue": "0",
+            "Guid": "d27cc852-5f7f-4f09-8944-7d491a43757d",
+            "Id": "SMEMA-1-A-1",
+            "Description": "Machine Ready",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          }
+        ]
+      },
+      {
+        "ConnectButtonEvent": {
+          "Guid": "1d7b4397-da42-42b9-a7e6-88df86de4917",
+          "Id": "70a2f9f0-7c94-45d9-86e4-ebd152cf4092",
+          "Description": "System Event: Connect to device",
+          "Subjects": [],
+          "Keys": []
+        },
+        "RestartButtonEvent": {
+          "Guid": "c235054e-ea92-4afb-9ecd-a4d3692c7f53",
+          "Id": "ef4786ba-c57a-4d28-bd7b-a87ba3715bf6",
+          "Description": "System Event: Restart the device",
+          "Subjects": [],
+          "Keys": []
+        },
+        "Name": "ED-588",
+        "IP": "192.168.1.14",
+        "Guid": "beb4461e-5e1a-4e5e-8365-7074f8068fb6",
+        "MACAddress": "000A4F055979",
+        "AutoConnect": false,
+        "Outputs": [],
+        "IOEvents": []
+      },
+      {
+        "ConnectButtonEvent": {
+          "Guid": "35d99857-b9fa-4129-9f93-cc1156243cf9",
+          "Id": "03639ff4-ef2d-490b-90c1-c37d0ef40fb6",
+          "Description": "System Event: Connect to device",
+          "Subjects": [],
+          "Keys": []
+        },
+        "RestartButtonEvent": {
+          "Guid": "0da281e8-e426-45f7-a558-049dbf112684",
+          "Id": "dbd6be1e-7776-4c46-bf95-5febc8de4aae",
+          "Description": "System Event: Restart the device",
+          "Subjects": [],
+          "Keys": []
+        },
+        "Name": "ED-004pp",
+        "IP": "192.168.1.9",
+        "Guid": "f67b3338-6ba4-4161-ac31-c0e605c4c261",
+        "MACAddress": "000A4F05221A",
+        "AutoConnect": false,
+        "Outputs": [],
+        "IOEvents": []
+      }
+    ],
+    "Discovery": {
+      "Properties": {
+        "DiscoverySubscription": {
+          "Guid": "cc659245-d661-436c-98b0-986d66d2eef4",
+          "Id": "41b86da3-ca4a-4a16-bce3-d27044621fcc",
+          "Subjects": [
+            0
+          ]
+        },
+        "StartDeviceDiscovery": {
+          "Guid": "578325ca-1005-4724-a9f7-023abc3a75f1",
+          "Id": "092ffe59-2b73-4b75-8604-5023774b6b80",
+          "Description": "Starts the Device Discovery routine by a user action.",
+          "Subjects": [],
+          "Keys": []
+        }
+      }
+    },
+    "Defaults": {
+      "Key": "value",
+      "RisingEdge": "1",
+      "FallingEdge": "0"
+    }
+  }
+}

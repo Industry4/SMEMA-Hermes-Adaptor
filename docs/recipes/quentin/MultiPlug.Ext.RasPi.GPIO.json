@@ -1,0 +1,462 @@
+{
+  "assembly": "MultiPlug.Ext.RasPi.GPIO",
+  "properties": {
+    "RaspberryPi": {
+      "GPIO": [
+        {
+          "BcmPinNumber": "5",
+          "Output": "",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "295146dc-95c8-4165-83a4-19f36ebc9299",
+            "Id": "591d8c0a-7ac4-4a11-b029-e9881e73afe5",
+            "Description": "BCM Pin: 5",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "6",
+          "Output": "",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "960b81ed-2245-461e-8693-d76b3837eade",
+            "Id": "c982c9e6-58ac-4744-beb7-f5c817553cbb",
+            "Description": "BCM Pin: 6",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "7",
+          "Output": "",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "cfe5037b-a0bc-4860-9276-596581707c5e",
+            "Id": "3317939f-4792-41be-aaa6-e4f5102e205a",
+            "Description": "BCM Pin: 7",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "8",
+          "Output": "",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "d0fd12e0-3efa-415b-994f-ef22a544ddd0",
+            "Id": "a4eadffb-4d3d-44f1-844b-05077654ab9e",
+            "Description": "BCM Pin: 8",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "9",
+          "Output": "",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "54dd731b-de8b-4877-b359-4c4d4f58439e",
+            "Id": "4a2d079a-c022-43a1-836c-aa0a70439ea4",
+            "Description": "BCM Pin: 9",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "10",
+          "Output": "",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "010d3c7e-9905-4b26-94b4-54a77e90c41a",
+            "Id": "e5dc7cd1-0bff-4a0d-bd65-079fa2f25a1a",
+            "Description": "BCM Pin: 10",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "11",
+          "Output": "",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "b5e75804-83ad-4ff8-968b-e8fce3b3cf4b",
+            "Id": "7c471abf-6c2e-48a8-9e4c-81812df3d413",
+            "Description": "BCM Pin: 11",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "12",
+          "Output": "true",
+          "PullMode": 0,
+          "InitState": 1,
+          "ShutdownState": 3,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "a28d2c79-76b5-4ce3-9e16-5d2a41451594",
+            "Id": "a5ad188a-1c3c-49f5-a8ad-a200be4b315b",
+            "Description": "Status LED Red",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "13",
+          "Output": "true",
+          "PullMode": 0,
+          "InitState": 3,
+          "ShutdownState": 3,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "ea19fdf4-7306-4d7c-ab36-e51379d0c564",
+            "Id": "2bc0b69e-c2dd-4e1c-9150-9f8c6e143811",
+            "Description": "Status LED Green",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "16",
+          "Output": "true",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "e186e523-efc3-4964-9c96-ad348d49ffba",
+            "Id": "c88e2085-9ce1-4fe4-88e5-58e98cb95042",
+            "Description": "BUZZER",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "17",
+          "Output": "false",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "432f621c-8d71-4157-9f8d-d3f92751e572",
+            "Id": "SMEMA-1-B-1",
+            "Description": "SMEMA Lane 1B Good PCB",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "19",
+          "Output": "",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "cdb61c66-4196-48cf-ad68-407c129a939b",
+            "Id": "9e561665-61ac-4b63-898e-5ddd65945264",
+            "Description": "BCM Pin: 19",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "20",
+          "Output": "true",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 3,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "f6f8733a-569a-4901-bc29-3d4f592028a9",
+            "Id": "a23adb8e-b8c8-4b45-b544-ed71a5d64887",
+            "Description": "SMEMA Lane 1A Bad PCB",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": [
+            {
+              "KeyId": "value",
+              "High": "1",
+              "Low": "0",
+              "Guid": "c6a533ba-6986-44b6-8808-da2ca301867d",
+              "Id": "SMEMAFailedBoardAvailable:Machine:Conveyor:Lane:1",
+              "Subjects": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "BcmPinNumber": "21",
+          "Output": "true",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 3,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "1bee799a-2613-4583-96c6-c989036fcba3",
+            "Id": "41ee7918-6644-49dc-94c7-a10228894635",
+            "Description": "SMEMA Lane 1A Good PCB",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": [
+            {
+              "KeyId": "value",
+              "High": "1",
+              "Low": "0",
+              "Guid": "8a8d2e25-3aa9-402c-abab-a15166462bcd",
+              "Id": "SMEMABoardAvailable:Machine:Conveyor:Lane:1",
+              "Subjects": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "BcmPinNumber": "22",
+          "Output": "false",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "6c65ce48-f457-44e9-967c-59be369d430e",
+            "Id": "SMEMA-1-A-1",
+            "Description": "SMEMA Lane 1A Machine Ready",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "23",
+          "Output": "",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "44540aad-215f-4866-b9a3-da7f4c655e18",
+            "Id": "c71d62e3-d703-4871-abae-8273fe16d22a",
+            "Description": "BCM Pin: 23",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "24",
+          "Output": "",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "11dec337-1292-4dff-807f-355f727e4ccc",
+            "Id": "81c0d64c-8eae-4cc3-b863-fba49110b8ef",
+            "Description": "BCM Pin: 24",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "25",
+          "Output": "",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "bc472531-900f-453f-8ad9-9bf24bc97e8e",
+            "Id": "f5a6269b-6bc2-45fe-8206-904771e4ea49",
+            "Description": "BCM Pin: 25",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        },
+        {
+          "BcmPinNumber": "26",
+          "Output": "true",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 3,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "c7324987-ecf2-4af1-bedb-5cce1cc46991",
+            "Id": "6157b263-1416-4869-b073-421794c304a5",
+            "Description": "SMEMA Lane 1B Machine Ready",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": [
+            {
+              "KeyId": "value",
+              "High": "1",
+              "Low": "0",
+              "Guid": "f41c377f-5a5a-4d43-bc28-8d790b204a77",
+              "Id": "SMEMAMachineReady:Machine:Conveyor:Lane:1",
+              "Subjects": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "BcmPinNumber": "27",
+          "Output": "false",
+          "PullMode": 0,
+          "InitState": 0,
+          "ShutdownState": 0,
+          "Event": {
+            "HighValue": "1",
+            "LowValue": "0",
+            "Guid": "2b6d4cea-e91f-465e-962c-f72a22219200",
+            "Id": "SMEMA-1-B-2",
+            "Description": "SMEMA Lane 1B Bad PCB",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          "Subscriptions": []
+        }
+      ]
+    }
+  }
+}

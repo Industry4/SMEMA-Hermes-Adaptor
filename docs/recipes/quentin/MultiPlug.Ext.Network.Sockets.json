@@ -1,0 +1,63 @@
+{
+  "assembly": "MultiPlug.Ext.Network.Sockets",
+  "properties": {
+    "SocketEndpoints": [
+      {
+        "Guid": "f0ee4750-c7ba-4f2c-ae9e-1d933da30f7b",
+        "ReadEvent": {
+          "Guid": "f0ee4750-c7ba-4f2c-ae9e-1d933da30f7b",
+          "Id": "Socket-Downstream-Read",
+          "Description": "Socket ReadSocket-Downstream-Read",
+          "Subjects": [
+            "value"
+          ],
+          "Keys": [
+            "value"
+          ]
+        },
+        "WriteSubscriptions": [
+          {
+            "Guid": "9596a33d-f16e-4b41-9d44-a4c641da9b0c",
+            "Id": "Hermes-Downstream-Write",
+            "Subjects": [
+              0
+            ]
+          }
+        ],
+        "Backlog": 100,
+        "Port": 50101,
+        "IPAddress": "192.168.1.40",
+        "NICIndex": 5,
+        "LoggingLevel": 2
+      }
+    ],
+    "SocketClients": [
+      {
+        "Guid": "05a589c7-fca7-4f09-843e-22e1a4b3464b",
+        "ReadEvent": {
+          "Guid": "05a589c7-fca7-4f09-843e-22e1a4b3464b",
+          "Id": "Socket-Upstream-Read",
+          "Description": "Socket-Upstream-Read",
+          "Subjects": [
+            "value"
+          ],
+          "Keys": [
+            "value"
+          ]
+        },
+        "WriteSubscriptions": [
+          {
+            "Guid": "fb207572-d2e9-4bdf-863f-cfe4e770887d",
+            "Id": "Hermes-Upstream-Write",
+            "Subjects": [
+              0
+            ]
+          }
+        ],
+        "HostName": "192.168.1.43",
+        "Port": 50106,
+        "LoggingLevel": 2
+      }
+    ]
+  }
+}
