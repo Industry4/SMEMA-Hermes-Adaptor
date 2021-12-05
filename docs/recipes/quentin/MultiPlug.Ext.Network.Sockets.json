@@ -26,9 +26,9 @@
         ],
         "Backlog": 100,
         "Port": 50101,
-        "IPAddress": "192.168.1.40",
-        "NICIndex": 5,
-        "LoggingLevel": 2
+        "IPAddress": "0.0.0.0",
+        "NICIndex": 0,
+        "LoggingLevel": 0
       }
     ],
     "SocketClients": [
@@ -54,9 +54,9 @@
             ]
           }
         ],
-        "HostName": "192.168.1.43",
-        "Port": 50106,
-        "LoggingLevel": 2
+        "HostName": "0.0.0.0",
+        "Port": 50102,
+        "LoggingLevel": 0
       }
     ]
   }
