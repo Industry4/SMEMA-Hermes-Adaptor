@@ -1,0 +1,30 @@
+{
+  "assembly": "MultiPlug.Ext.Ports",
+  "properties": {
+    "SerialPorts": [
+      {
+        "Guid": "776286de-dafa-4c42-8284-4491b1b054d9",
+        "ReadEvent": {
+          "Guid": "eafdb10c-0a24-4037-b6eb-53deb49525b1",
+          "Id": "Serial-Port-Read",
+          "Description": "Serial Port Read",
+          "Subjects": [],
+          "Keys": []
+        },
+        "WriteSubscriptions": [],
+        "PortName": "/dev/ttyS0",
+        "BaudRate": 115200,
+        "GroupKey": "value",
+        "WriteTimeout": -1,
+        "ReadTimeout": -1,
+        "ReadStrategyReadExisting": true,
+        "ReadStrategyReadLine": false,
+        "ReadStrategyReadTo": false,
+        "ReadTo": null,
+        "BeginConnect": true,
+        "WriteLine": false
+      }
+    ],
+    "LPTPorts": []
+  }
+}
