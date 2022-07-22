@@ -3,78 +3,87 @@
   "properties": {
     "Lanes": [
       {
-        "Guid": "565c10e7-4627-4134-a891-6b929e8d41da",
-        "ServiceDescription": {
-          "SupportedFeatures": {
-            "BoardForecast": false,
-            "CheckAliveResponse": true,
-            "SendBoardInfo": true
-          },
-          "LaneId": "1",
-          "MachineId": "Conveyor",
-          "InterfaceId": null,
-          "Version": "1.1",
-          "ModeSMEMAAdaptor": true
-        },
+        "Guid": "lan1",
+        "Width": 0.0,
+        "Length": 0.0,
+        "Thickness": 0.0,
+        "ConveyorSpeed": 0.0,
+        "TopClearanceHeight": 0.0,
+        "BottomClearanceHeight": 0.0,
+        "Weight": 0.0,
+        "HermesMachineId": "Conveyor",
+        "HermesLaneId": 1,
+        "HermesInterfaceId": "",
+        "HermesFeatureCheckAliveResponse": true,
         "UpstreamDeserialiser": {
           "ReadMessageSubscription": {
-            "Guid": "bb59ece2-acac-46e5-87c9-8dda88f4115a",
-            "Id": "Socket-Upstream-Read",
-            "Subjects": [
-              0
-            ]
+            "Guid": "472460dc-4cb7-4f49-87d5-95b8c172c68a",
+            "Id": "Socket-Lane1UpstreamXMLRead[0]"
           }
         },
         "UpstreamSerialiser": {
           "WriteMessageEvent": {
-            "Guid": "3be2cb4e-2a45-4292-bbc7-3e455ef096e2",
-            "Id": "Hermes-Upstream-Write",
-            "Description": "Hermes-Upstream-Write",
+            "Guid": "4502c4c6-fc23-45b9-adf1-bb129de7c817",
+            "Id": "lan1-UpstreamXMLSend",
+            "Description": "Outbound XML Messages",
+            "Group": "lan1",
             "Subjects": [
-              "value"
+              "xml"
             ],
             "Keys": [
-              "value"
+              "xml"
             ]
           }
         },
         "DownstreamDeserialiser": {
           "ReadMessageSubscription": {
-            "Guid": "47ee1bae-6491-4b17-8ba1-6beb8e7c4b80",
-            "Id": "Socket-Downstream-Read",
-            "Subjects": [
-              0
-            ]
+            "Guid": "476fbeb7-acc6-4b65-bfc9-64784e5574fe",
+            "Id": "Socket-Lane1DownstreamXMLRead[0]"
           }
         },
         "DownstreamSerialiser": {
           "WriteMessageEvent": {
-            "Guid": "914dd0df-f251-4b8c-8ec7-01632cc5a0f7",
-            "Id": "Hermes-Downstream-Write",
-            "Description": "Outbound Messages",
+            "Guid": "1e4fc9ee-5cd3-4191-b16d-c866a6e5f3b6",
+            "Id": "lan1-DownstreamXMLSend",
+            "Description": "Outbound XML Messages",
+            "Group": "lan1",
             "Subjects": [
-              "value"
+              "xml"
             ],
             "Keys": [
-              "value"
+              "xml"
             ]
           }
         },
         "Upstream": {
           "Enabled": true,
-          "MachineReadySubscriptions": [],
-          "SMEMAMachineReadySubscription": {
-            "Value": "1",
-            "Guid": "55ade630-1deb-4edc-9940-ad7d94efacfd",
-            "Id": "SMEMA-1-A-1",
+          "SMEMAMachineReadySubscriptions": [
+            {
+              "ReadyValue": "1",
+              "Latched": true,
+              "InItMachineReady": false,
+              "ResetMachineReady": false,
+              "Guid": "840ca22a-b489-4057-b1bd-331e9f3e1c63",
+              "Id": "SMEMA-1-A-1"
+            }
+          ],
+          "MachineReadyAggregatedEvent": {
+            "Guid": "3e149298-6b2c-49c9-8567-9cd174cc7125",
+            "Id": "lan1-SMEMAMachineReadyAggregated",
+            "Description": "Aggregated Machine Ready Status",
+            "Group": "lan1",
             "Subjects": [
-              0
+              "json"
+            ],
+            "Keys": [
+              "json"
             ]
           },
           "SMEMABoardAvailableEvent": {
-            "Guid": "0fe52b45-9f1c-4849-a4d4-ff6d3c440691",
-            "Id": "SMEMABoardAvailable:Machine:Conveyor:Lane:1",
+            "Guid": "e6fa6187-cacf-46bd-ab3a-46f7e990ffaf",
+            "Id": "lan1-SMEMAGoodBoardReady",
             "Description": "Board Available",
+            "Group": "lan1",
             "Subjects": [
               "value"
             ],
@@ -83,9 +92,10 @@
             ]
           },
           "SMEMAFailedBoardAvailableEvent": {
-            "Guid": "48a282a9-c481-4738-a6c3-ea9c9994f536",
-            "Id": "SMEMAFailedBoardAvailable:Machine:Conveyor:Lane:1",
+            "Guid": "8d7f2b6a-539c-4445-90b2-a7d340d63f7f",
+            "Id": "lan1-SMEMABadBoardReady",
             "Description": "Failed Board Available",
+            "Group": "lan1",
             "Subjects": [
               "value"
             ],
@@ -94,21 +104,61 @@
             ]
           },
           "HermesStateEvent": {
-            "Guid": "828683d5-ddfa-4637-859a-c44aed8beca6",
-            "Id": "HermesStateUpstream:Machine:Conveyor:Lane:1",
+            "Guid": "8ce1e603-3863-413f-853d-d5ad44061fcc",
+            "Id": "lan1-HermesStateUpstream",
             "Description": "Upstream Hermes State",
+            "Group": "lan1",
             "Subjects": [
               "value"
             ],
             "Keys": [
               "value"
+            ]
+          },
+          "HermesMismatchEvent": {
+            "Guid": "3e7a8770-a23c-41c9-baca-30f80370a309",
+            "Id": "lan1-MeasurementsMismatch",
+            "Description": "Old and New values of the board measurements",
+            "Group": "lan1",
+            "Subjects": [
+              "WidthNew",
+              "WidthCurrent",
+              "LengthNew",
+              "LengthCurrent",
+              "ThicknessNew",
+              "ThicknessCurrent",
+              "ConveyorSpeedNew",
+              "ConveyorSpeedCurrent",
+              "TopClearanceHeightNew",
+              "TopClearanceHeightCurrent",
+              "BottomClearanceHeightNew",
+              "BottomClearanceHeightCurrent",
+              "WeightNew",
+              "WeightCurrent"
+            ],
+            "Keys": [
+              "WidthNew",
+              "WidthCurrent",
+              "LengthNew",
+              "LengthCurrent",
+              "ThicknessNew",
+              "ThicknessCurrent",
+              "ConveyorSpeedNew",
+              "ConveyorSpeedCurrent",
+              "TopClearanceHeightNew",
+              "TopClearanceHeightCurrent",
+              "BottomClearanceHeightNew",
+              "BottomClearanceHeightCurrent",
+              "WeightNew",
+              "WeightCurrent"
             ]
           },
           "SMEMAMachineNotReadyDelay": 0,
           "BoardQueueEvent": {
-            "Guid": "b7c746b9-4342-4717-9092-4e8cdcb77ca4",
-            "Id": "BoardQueueUpstream:Machine:Conveyor:Lane:1",
+            "Guid": "713f7c06-9bbf-483c-98d5-6169e605fba0",
+            "Id": "lan1-BoardQueueUpstream",
             "Description": "Upstream board queue as Json",
+            "Group": "lan1",
             "Subjects": [
               "json"
             ],
@@ -116,9 +166,27 @@
               "json"
             ]
           },
-          "CheckAlive": 60,
-          "ConveyorSpeed": "",
-          "BoardWidth": ""
+          "HermesFeatureCheckAliveResponse": false,
+          "HermesFeatureQueryBoardInfo": true,
+          "CheckAlive": 20,
+          "MatchWidth": true,
+          "MatchLength": false,
+          "MatchThickness": false,
+          "MatchConveyorSpeed": false,
+          "MatchTopClearanceHeight": false,
+          "MatchBottomClearanceHeight": false,
+          "MatchWeight": false,
+          "MismatchActionManual": true,
+          "MismatchActionAuto": false,
+          "MismatchResetMachineReady": true,
+          "MismatchMachineReadyRecheckDelay": 1000,
+          "MismatchWidthFormat": "",
+          "MismatchLengthFormat": "",
+          "MismatchThicknessFormat": "",
+          "MismatchConveyorSpeedFormat": "",
+          "MismatchTopClearanceHeightFormat": "",
+          "MismatchBottomClearanceHeightFormat": "",
+          "MismatchWeightFormat": ""
         },
         "Downstream": {
           "Enabled": true,
@@ -126,11 +194,12 @@
           "PersistentBoardCount": 50,
           "EmptyQueueActionManualEntry": true,
           "EmptyQueueActionScanStation": true,
-          "EmptyQueueActionAutoGenerate": true,
+          "EmptyQueueActionAutoGenerate": false,
           "SMEMAMachineReadyEvent": {
-            "Guid": "e8e10ec9-135e-4b45-85e2-21459d6fd675",
-            "Id": "SMEMAMachineReady:Machine:Conveyor:Lane:1",
+            "Guid": "88917725-964e-4454-ae30-67bf5e73fe2b",
+            "Id": "lan1-SMEMAMachineReady",
             "Description": "SMEMA Machine Ready",
+            "Group": "lan1",
             "Subjects": [
               "value"
             ],
@@ -138,26 +207,49 @@
               "value"
             ]
           },
-          "SMEMABoardAvailableSubscription": {
-            "Value": "1",
-            "Guid": "59e636ea-e61e-49b0-9eff-c13903312a72",
-            "Id": "SMEMA-1-B-1",
+          "SMEMAGoodBoardReadySubscriptions": [
+            {
+              "ReadyValue": "1",
+              "Guid": "20b991fd-2804-441a-b5a4-b5a61756973e",
+              "Id": "SMEMA-1-B-2"
+            }
+          ],
+          "SMEMABadBoardReadySubscriptions": [
+            {
+              "ReadyValue": "1",
+              "Guid": "e51ffa4f-b399-47f0-8daf-e805df1bf9af",
+              "Id": "SMEMA-1-B-3"
+            }
+          ],
+          "GoodBoardReadyAggregatedEvent": {
+            "Guid": "a3c8ef93-0d2f-424f-b13e-fbdc1d1227ba",
+            "Id": "lan1-SMEMAGoodBoardReadyAggregated",
+            "Description": "Aggregated Good Board Ready Status",
+            "Group": "lan1",
             "Subjects": [
-              0
+              "json"
+            ],
+            "Keys": [
+              "json"
             ]
           },
-          "SMEMAFailedBoardAvailableSubscription": {
-            "Value": "1",
-            "Guid": "cbd0d547-9433-4e52-bbf1-73b560f8792d",
-            "Id": "SMEMA-1-B-2",
+          "BadBoardReadyAggregatedEvent": {
+            "Guid": "f52f13af-f626-46d6-b392-1de07856a1ee",
+            "Id": "lan1-SMEMABadBoardReadyAggregated",
+            "Description": "Aggregated Bad Board Ready Status",
+            "Group": "lan1",
             "Subjects": [
-              0
+              "json"
+            ],
+            "Keys": [
+              "json"
             ]
           },
           "BoardQueueEvent": {
-            "Guid": "71002232-c263-4d92-bb63-8448781d5a35",
-            "Id": "BoardQueueThisStation:Machine:Conveyor:Lane:1",
+            "Guid": "8c8a96ab-e1be-412e-900d-7a51caa3b996",
+            "Id": "lan1-BoardQueueThisStation",
             "Description": "This station board queue as Json",
+            "Group": "lan1",
             "Subjects": [
               "json"
             ],
@@ -166,9 +258,10 @@
             ]
           },
           "BoardQueueDownstreamEvent": {
-            "Guid": "8865b57e-6672-47c4-b25f-b23bb23e7d52",
-            "Id": "BoardQueueDownstream:Machine:Conveyor:Lane:1",
+            "Guid": "068d2e25-e91c-4cec-a6a1-8b1b3acd9b46",
+            "Id": "lan1-BoardQueueDownstream",
             "Description": "Downstream board queue as Json",
+            "Group": "lan1",
             "Subjects": [
               "json"
             ],
@@ -177,9 +270,10 @@
             ]
           },
           "HermesStateEvent": {
-            "Guid": "5be5b248-b399-41f0-8c44-e53d22f3d8ad",
-            "Id": "HermesStateDownstream:Machine:Conveyor:Lane:1",
+            "Guid": "ed893ab1-4e45-4b02-b187-814146f3cdb7",
+            "Id": "lan1-HermesStateDownstream",
             "Description": "Downstream Hermes State",
+            "Group": "lan1",
             "Subjects": [
               "value"
             ],
@@ -187,48 +281,76 @@
               "value"
             ]
           },
-          "CheckAlive": 60,
-          "ConveyorSpeed": "",
-          "BoardWidth": ""
+          "CheckAlive": 20,
+          "FlipBoard": 0,
+          "LIFO": false,
+          "HermesFeatureBoardForecast": false,
+          "BoardForecastOnLength": false,
+          "BoardForecastOnWidth": false,
+          "BoardForecastOnThickness": false,
+          "BoardForecastOnConveyorSpeed": false,
+          "BoardForecastOnTopClearanceHeight": false,
+          "BoardForecastOnBottomClearanceHeight": false,
+          "BoardForecastOnWeight": false,
+          "BoardForecastTimeUntilAvailable": 0,
+          "HermesFeatureSendBoardInfo": true,
+          "HermesFeatureCommand": true,
+          "RouteSet": false,
+          "RouteValue": 0,
+          "ActionSet": false,
+          "ActionValue": 0
         },
         "ScanStation": {
           "ScanSubscription": {
-            "Guid": "848454c7-326e-4625-a750-2ff1e723dfee",
-            "Id": "",
-            "Subjects": [
-              0,
-              65535,
-              65535,
-              65535,
-              65535,
-              65535,
-              65535,
-              65535,
-              65535,
-              65535,
-              65535,
-              65535,
-              65535,
-              65535,
-              65535,
-              65535
-            ]
+            "Guid": "070f8ac3-7607-4e41-b1c8-cfcae6c29aab",
+            "Id": ""
           },
           "ScanQueueEvent": {
-            "Guid": "5c3d94ef-9dba-415a-bf1b-ba6fbb1cb970",
-            "Id": "ScanQueueUpstream:Machine:Conveyor:Lane:1",
+            "Guid": "ea4b4e21-9a82-45f2-ba49-8658608b754a",
+            "Id": "lan1-ScanQueueUpstream",
             "Description": "Scan queue as Json",
+            "Group": "lan1",
             "Subjects": [],
             "Keys": []
           },
-          "PersistBoardQueueOnShutdown": true
+          "PersistBoardQueueOnShutdown": true,
+          "BoardId": "{guid}",
+          "BoardIdCreatedBy": "",
+          "FailedBoard": 0,
+          "ProductTypeId": "",
+          "FlippedBoard": 0,
+          "TopBarcode": "",
+          "BottomBarcode": "",
+          "WorkOrderId": "",
+          "BatchId": "",
+          "Route": 0,
+          "Action": 0,
+          "IndexBoardId": -1,
+          "IndexBoardIdCreatedBy": -1,
+          "IndexFailedBoard": -1,
+          "IndexProductTypeId": -1,
+          "IndexFlippedBoard": -1,
+          "IndexTopBarcode": -1,
+          "IndexBottomBarcode": -1,
+          "IndexLength": -1,
+          "IndexWidth": -1,
+          "IndexThickness": -1,
+          "IndexConveyorSpeed": -1,
+          "IndexTopClearanceHeight": -1,
+          "IndexBottomClearanceHeight": -1,
+          "IndexWeight": -1,
+          "IndexWorkOrderId": -1,
+          "IndexBatchId": -1,
+          "IndexRoute": -1,
+          "IndexAction": -1
         },
         "PassThrough": {
           "Enabled": false,
           "UpstreamCheckAliveEvent": {
-            "Guid": "97ce02f3-a3a9-43d1-83d1-ed46c5f01fbb",
-            "Id": "UpstreamCheckAlive:Machine:Conveyor:Lane:1",
+            "Guid": "90f601ed-0e0d-4005-b3a0-7bcffe1545ea",
+            "Id": "lan1-UpstreamCheckAlive",
             "Description": "Upstream Check Alive",
+            "Group": "lan1",
             "Subjects": [
               "Id",
               "Type"
@@ -239,9 +361,10 @@
             ]
           },
           "UpstreamBoardAvailableEvent": {
-            "Guid": "2541338b-2996-4294-8daa-72173d673131",
-            "Id": "UpstreamBoardAvailable:Machine:Conveyor:Lane:1",
+            "Guid": "275e3479-a94a-40aa-b6f3-d7abf735f3a0",
+            "Id": "lan1-UpstreamBoardAvailable",
             "Description": "Upstream Board Available",
+            "Group": "lan1",
             "Subjects": [
               "BoardId",
               "BoardIdCreatedBy",
@@ -276,16 +399,18 @@
             ]
           },
           "UpstreamRevokeBoardAvailableEvent": {
-            "Guid": "2e3ed707-d35e-48ad-a2f4-33eb9db5fad8",
-            "Id": "UpstreamRevokeBoardAvailable:Machine:Conveyor:Lane:1",
+            "Guid": "fc86dcc0-4129-4cc4-996f-291d88a72197",
+            "Id": "lan1-UpstreamRevokeBoardAvailable",
             "Description": "Upstream Revoke Board Available",
+            "Group": "lan1",
             "Subjects": [],
             "Keys": []
           },
           "UpstreamNotificationEvent": {
-            "Guid": "eb58fa16-610a-47fa-8dda-59c05438c88f",
-            "Id": "UpstreamNotification:Machine:Conveyor:Lane:1",
+            "Guid": "12508d40-e345-4be2-b292-19549422f1db",
+            "Id": "lan1-UpstreamNotification",
             "Description": "Upstream Notification",
+            "Group": "lan1",
             "Subjects": [
               "NotificationCode",
               "Severity",
@@ -298,9 +423,10 @@
             ]
           },
           "UpstreamServiceDescriptionEvent": {
-            "Guid": "ccccdcf1-98ef-4bf3-a7fa-f34b840f752c",
-            "Id": "UpstreamServiceDescription:Machine:Conveyor:Lane:1",
+            "Guid": "d68c2be0-f720-4cce-aba4-cc5cb305df83",
+            "Id": "lan1-UpstreamServiceDescription",
             "Description": "Upstream Service Description",
+            "Group": "lan1",
             "Subjects": [
               "MachineId",
               "LaneId",
@@ -323,9 +449,10 @@
             ]
           },
           "UpstreamTransportFinishedEvent": {
-            "Guid": "1080aa43-bab3-44b7-adcb-53356c95797c",
-            "Id": "UpstreamTransportFinished:Machine:Conveyor:Lane:1",
+            "Guid": "89840a03-06a3-48b1-a1b8-bc1fd2a6586a",
+            "Id": "lan1-UpstreamTransportFinished",
             "Description": "Upstream Transport Finished",
+            "Group": "lan1",
             "Subjects": [
               "BoardId",
               "TransferState"
@@ -336,9 +463,10 @@
             ]
           },
           "DownstreamCheckAliveEvent": {
-            "Guid": "7750aed1-9bdb-4da1-a7b4-d81f21af9c9a",
-            "Id": "DownstreamCheckAlive:Machine:Conveyor:Lane:1",
+            "Guid": "cafa003b-fe8b-4ba2-9ff5-83110eafe88d",
+            "Id": "lan1-DownstreamCheckAlive",
             "Description": "Downstream Check Alive",
+            "Group": "lan1",
             "Subjects": [
               "Id",
               "Type"
@@ -349,9 +477,10 @@
             ]
           },
           "DownstreamServiceDescriptionEvent": {
-            "Guid": "532389d7-ab38-44cd-9fa2-e1d0c3f7b120",
-            "Id": "DownstreamServiceDescription:Machine:Conveyor:Lane:1",
+            "Guid": "bedd5fdc-e830-4db1-a9c8-7109933b9f21",
+            "Id": "lan1-DownstreamServiceDescription",
             "Description": "Downstream Service Description",
+            "Group": "lan1",
             "Subjects": [
               "MachineId",
               "LaneId",
@@ -374,9 +503,10 @@
             ]
           },
           "DownstreamMachineReadyEvent": {
-            "Guid": "5e5d570e-1fd9-4241-8f6f-79c2391dded5",
-            "Id": "DownstreamMachineReady:Machine:Conveyor:Lane:1",
+            "Guid": "dc9124e2-cfcf-4000-9a1b-1f8b63a704f3",
+            "Id": "lan1-DownstreamMachineReady",
             "Description": "Downstream Machine Ready",
+            "Group": "lan1",
             "Subjects": [
               "FailedBoard",
               "ForecastId",
@@ -407,9 +537,10 @@
             ]
           },
           "DownstreamStartTransportEvent": {
-            "Guid": "3f278b19-fe69-43eb-a4e7-1652f50c7289",
-            "Id": "DownstreamStartTransport:Machine:Conveyor:Lane:1",
+            "Guid": "9dbddf63-9749-43d5-adb6-6847c5f02d97",
+            "Id": "lan1-DownstreamStartTransport",
             "Description": "Downstream Start Transport",
+            "Group": "lan1",
             "Subjects": [
               "BoardId",
               "ConveyorSpeed"
@@ -420,9 +551,10 @@
             ]
           },
           "DownstreamStopTransportEvent": {
-            "Guid": "a20e1ad2-9660-4c1f-836a-27e17cc9cf73",
-            "Id": "DownstreamStopTransport:Machine:Conveyor:Lane:1",
+            "Guid": "65f862db-d30e-41cf-b5a0-1d4f884550a7",
+            "Id": "lan1-DownstreamStopTransport",
             "Description": "Downstream Stop Transport",
+            "Group": "lan1",
             "Subjects": [
               "BoardId",
               "TransferState"
@@ -433,9 +565,10 @@
             ]
           },
           "DownstreamNotificationEvent": {
-            "Guid": "b2929299-01b5-4b8d-9d31-6164b2f98472",
-            "Id": "DownstreamNotification:Machine:Conveyor:Lane:1",
+            "Guid": "96842232-b0b2-4966-8f2c-b1095737e2d9",
+            "Id": "lan1-DownstreamNotification",
             "Description": "Downstream Notification",
+            "Group": "lan1",
             "Subjects": [
               "NotificationCode",
               "Severity",
@@ -449,28 +582,94 @@
           }
         },
         "NotificationEvent": {
-          "Guid": "638ddbca-2529-497f-8f22-b233721c97f0",
-          "Id": "Notification:Machine:Conveyor:Lane:1",
+          "Guid": "b33eb3f9-f79e-4af8-8372-8290b1815b43",
+          "Id": "lan1-Notification",
           "Description": "Notifications from Machine: Conveyor Lane: 1",
+          "Group": "lan1",
           "Subjects": [
             "LogEntry",
             "BoardStarved",
             "BoardStarvedFailedBoard",
             "Running",
-            "Mismatch"
+            "Mismatch",
+            "Status"
           ],
           "Keys": [
             "LogEntry",
             "BoardStarved",
             "BoardStarvedFailedBoard",
             "Running",
-            "Mismatch"
+            "Mismatch",
+            "Status"
+          ]
+        },
+        "MeasurementsEvent": {
+          "Guid": "2f03cc57-576f-47c5-b1c2-347452321384",
+          "Id": "lan1-Measurements",
+          "Description": "Updates to Measurements",
+          "Group": "lan1",
+          "Subjects": [
+            "Width",
+            "Length",
+            "Thickness",
+            "ConveyorSpeed",
+            "TopClearanceHeight",
+            "BottomClearanceHeight",
+            "Weight"
+          ],
+          "Keys": [
+            "Width",
+            "Length",
+            "Thickness",
+            "ConveyorSpeed",
+            "TopClearanceHeight",
+            "BottomClearanceHeight",
+            "Weight"
           ]
         },
         "PersistBoardQueueOnShutdown": true,
-        "LoggingLevel": 0
+        "ModeSMEMAAdaptor": true,
+        "LoggingLevel": -1
       }
     ],
+    "GlobalEvents": {
+      "GlobalStatusGood": {
+        "Guid": "63e71e45-3169-4c2c-a8de-fb68c8d752d7",
+        "Id": "Global-Status-Good",
+        "Description": "Good Global Status for all Lanes",
+        "Group": "Global",
+        "Subjects": [
+          "Status"
+        ],
+        "Keys": [
+          "Status"
+        ]
+      },
+      "GlobalStatusWarn": {
+        "Guid": "b440f112-c637-4d6a-a51c-8a4090935943",
+        "Id": "Global-Status-Warn",
+        "Description": "Warn Global Status for all Lanes",
+        "Group": "Global",
+        "Subjects": [
+          "Status"
+        ],
+        "Keys": [
+          "Status"
+        ]
+      },
+      "GlobalStatusAlarm": {
+        "Guid": "93e6103c-e8ee-4618-ab51-8db919592f33",
+        "Id": "Global-Status-Alarm",
+        "Description": "Alarm Global Status for all Lanes",
+        "Group": "Global",
+        "Subjects": [
+          "Status"
+        ],
+        "Keys": [
+          "Status"
+        ]
+      }
+    },
     "SMEMAmimic": {}
   }
 }
