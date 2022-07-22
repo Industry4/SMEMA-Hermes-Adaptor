@@ -24,7 +24,7 @@
         ],
         "Backlog": 100,
         "Port": 50100,
-        "IPAddress": "192.168.1.13",
+        "IPAddress": "192.168.1.86",
         "NICIndex": 0,
         "LoggingLevel": 0,
         "SubscriptionsControlConnect": true,
