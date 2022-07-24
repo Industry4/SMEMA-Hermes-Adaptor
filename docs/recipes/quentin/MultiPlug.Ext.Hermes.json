@@ -179,7 +179,7 @@
           "MismatchActionManual": true,
           "MismatchActionAuto": false,
           "MismatchResetMachineReady": true,
-          "MismatchMachineReadyRecheckDelay": 1000,
+          "MismatchMachineReadyRecheckDelay": 0,
           "MismatchWidthFormat": "",
           "MismatchLengthFormat": "",
           "MismatchThicknessFormat": "",
