@@ -4,7 +4,7 @@
     "Devices": [
       {
         "ConnectButtonEvent": {
-          "Guid": "39f44c55-43f3-4892-b82d-cc1109becf9c",
+          "Guid": "d391fac8-6a4d-4d87-b277-4180788cd3fa",
           "Id": "f6a3a361-5c4d-4682-98f0-a6d707aafd7d",
           "Description": "System Event: Connect to device",
           "Group": "",
@@ -12,7 +12,7 @@
           "Keys": []
         },
         "RestartButtonEvent": {
-          "Guid": "72983526-90fa-4437-b6e2-486f8ac33acb",
+          "Guid": "3ddfceaf-ceb0-4665-9a84-bcc05f4b2a00",
           "Id": "c185aea1-f47f-4a47-9a4a-66ab53d775aa",
           "Description": "System Event: Restart the device",
           "Group": "",
@@ -20,7 +20,7 @@
           "Keys": []
         },
         "Name": "RelayIO",
-        "IP": "192.168.1.25",
+        "IP": "192.168.1.26",
         "Guid": "2e7aba6a-6546-4d15-953e-602565b83eff",
         "MACAddress": "000A4F057C5E",
         "AutoConnect": true,
@@ -33,8 +33,8 @@
                 "HighValue": "1",
                 "LowSubject": "value",
                 "LowValue": "0",
-                "Guid": "aba07d68-2e08-4352-8deb-cb52af352e4c",
-                "Id": "UITogglef09855b2-4935-4ada-9632-12b4b16b309b"
+                "Guid": "7d593918-a514-4082-80b5-d3319fc6ca2b",
+                "Id": "UITogglece50953e-d9a7-4ff9-b740-601dd87f36cf"
               },
               {
                 "HighSubject": "value",
@@ -42,7 +42,7 @@
                 "LowSubject": "value",
                 "LowValue": "0",
                 "Guid": "99e44494-39f0-44d8-a93b-d0f8105d634e",
-                "Id": "08e1-SMEMAMachineReady"
+                "Id": "lan1-SMEMAMachineReady[0]"
               }
             ]
           },
@@ -54,16 +54,8 @@
                 "HighValue": "1",
                 "LowSubject": "value",
                 "LowValue": "0",
-                "Guid": "1be4ecac-b590-46fe-a0c8-da3dea2b3778",
-                "Id": "UITogglecaca630f-3608-4afb-b074-e43e31d0328e"
-              },
-              {
-                "HighSubject": "value",
-                "HighValue": "1",
-                "LowSubject": "value",
-                "LowValue": "0",
-                "Guid": "9980a65e-aeb1-4fc7-a545-a2c8b477dc80",
-                "Id": "SMEMAFailedBoardAvailable:Machine:Conveyor:Lane:1"
+                "Guid": "fd405059-5c5a-41c4-883f-0815e94a60b0",
+                "Id": "UIToggle901f7121-2922-4948-bb47-fc0acf73cd56"
               },
               {
                 "HighSubject": "value",
@@ -71,7 +63,7 @@
                 "LowSubject": "value",
                 "LowValue": "0",
                 "Guid": "973f9fe1-8d4e-478a-b1f9-0b8e8ec000a6",
-                "Id": "08e1-SMEMABadBoardReady"
+                "Id": "lan1-SMEMABadBoardReady[0]"
               }
             ]
           },
@@ -83,16 +75,8 @@
                 "HighValue": "1",
                 "LowSubject": "value",
                 "LowValue": "0",
-                "Guid": "1fba7813-2b22-40e8-9124-5c1a856e05df",
-                "Id": "UIToggle2dfcde82-ab62-4db9-a457-0c72ab7e73e1"
-              },
-              {
-                "HighSubject": "value",
-                "HighValue": "1",
-                "LowSubject": "value",
-                "LowValue": "0",
-                "Guid": "e53948ad-6257-4c4c-99aa-507a3a8db092",
-                "Id": "SMEMABoardAvailable:Machine:Conveyor:Lane:1"
+                "Guid": "98d0e627-9d4a-46a3-9100-69091482e45e",
+                "Id": "UIToggle25562b82-86fe-4706-8e13-c4399306f139"
               },
               {
                 "HighSubject": "value",
@@ -100,7 +84,7 @@
                 "LowSubject": "value",
                 "LowValue": "0",
                 "Guid": "1ceae3d3-bb7d-4f6a-8112-ef56bced63cd",
-                "Id": "08e1-SMEMAGoodBoardReady"
+                "Id": "lan1-SMEMAGoodBoardReady[0]"
               }
             ]
           }
@@ -152,66 +136,16 @@
             ]
           }
         ]
-      },
-      {
-        "ConnectButtonEvent": {
-          "Guid": "0c4df71c-4aa6-4379-ad51-84d7fa31f03c",
-          "Id": "70a2f9f0-7c94-45d9-86e4-ebd152cf4092",
-          "Description": "System Event: Connect to device",
-          "Group": "",
-          "Subjects": [],
-          "Keys": []
-        },
-        "RestartButtonEvent": {
-          "Guid": "b6013e04-e43b-47be-b276-bb0d49b030d8",
-          "Id": "ef4786ba-c57a-4d28-bd7b-a87ba3715bf6",
-          "Description": "System Event: Restart the device",
-          "Group": "",
-          "Subjects": [],
-          "Keys": []
-        },
-        "Name": "ED-588",
-        "IP": "192.168.1.26",
-        "Guid": "beb4461e-5e1a-4e5e-8365-7074f8068fb6",
-        "MACAddress": "000A4F055979",
-        "AutoConnect": false,
-        "Outputs": [],
-        "IOEvents": []
-      },
-      {
-        "ConnectButtonEvent": {
-          "Guid": "da782121-4f17-4bed-80ab-354fba8298db",
-          "Id": "03639ff4-ef2d-490b-90c1-c37d0ef40fb6",
-          "Description": "System Event: Connect to device",
-          "Group": "",
-          "Subjects": [],
-          "Keys": []
-        },
-        "RestartButtonEvent": {
-          "Guid": "4b842d5c-fc47-4e9d-ad31-c22452062506",
-          "Id": "dbd6be1e-7776-4c46-bf95-5febc8de4aae",
-          "Description": "System Event: Restart the device",
-          "Group": "",
-          "Subjects": [],
-          "Keys": []
-        },
-        "Name": "ED-004pp",
-        "IP": "192.168.1.9",
-        "Guid": "f67b3338-6ba4-4161-ac31-c0e605c4c261",
-        "MACAddress": "000A4F05221A",
-        "AutoConnect": false,
-        "Outputs": [],
-        "IOEvents": []
       }
     ],
     "Discovery": {
       "Properties": {
         "DiscoverySubscription": {
-          "Guid": "e5017859-5bf6-423a-b270-51b5648e9350",
+          "Guid": "b89ad395-d498-4944-8d2b-cb1558a7162e",
           "Id": "SSDP-Brainboxes"
         },
         "StartDeviceDiscovery": {
-          "Guid": "c6fc418b-40f1-4b28-ad1e-cc469bbdb91f",
+          "Guid": "c4bd32b8-7678-4e8c-8bfd-d04f3b9da744",
           "Id": "092ffe59-2b73-4b75-8604-5023774b6b80",
           "Description": "Starts the Device Discovery routine by a user action.",
           "Group": "",

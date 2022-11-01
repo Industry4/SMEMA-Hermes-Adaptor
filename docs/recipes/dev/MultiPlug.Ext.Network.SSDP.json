@@ -1,0 +1,47 @@
+{
+  "assembly": "MultiPlug.Ext.Network.SSDP",
+  "properties": {
+    "SSDPs": [
+      {
+        "Guid": "08868fca-4053-4e0e-8e52-1b2fd5e45664",
+        "DiscoveryEvent": {
+          "Guid": "08868fca-4053-4e0e-8e52-1b2fd5e45664",
+          "Id": "SSDP-Brainboxes",
+          "Description": "",
+          "Group": "",
+          "Subjects": [
+            "Location",
+            "DeviceType",
+            "FriendlyName",
+            "Manufacturer",
+            "ManufacturerURL",
+            "ModelDescription",
+            "ModelName",
+            "ModelNumber",
+            "UDN",
+            "SerialNumber",
+            "PresentationURL"
+          ],
+          "Keys": [
+            "Location",
+            "DeviceType",
+            "FriendlyName",
+            "Manufacturer",
+            "ManufacturerURL",
+            "ModelDescription",
+            "ModelName",
+            "ModelNumber",
+            "UDN",
+            "SerialNumber",
+            "PresentationURL"
+          ]
+        },
+        "DiscoveryTarget": "urn:schemas-upnp-org:device:BrainboxesED:1",
+        "SearchSubscription": {
+          "Guid": "08868fca-4053-4e0e-8e52-1b2fd5e45664",
+          "Id": "092ffe59-2b73-4b75-8604-5023774b6b80"
+        }
+      }
+    ]
+  }
+}
