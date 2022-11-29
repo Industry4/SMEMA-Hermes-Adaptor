@@ -1,5 +1,6 @@
 {
   "assembly": "MultiPlug.Ext.Network.Sockets",
+  "version": "1.0.12.0",
   "properties": {
     "SocketEndpoints": [
       {
@@ -18,12 +19,68 @@
         },
         "WriteSubscriptions": [
           {
-            "Guid": "c00ebed2-6123-4061-b804-ea7a4d7b5c2e",
+            "Guid": "67545bfb-0914-4a83-9efd-19807c497f4e",
             "Id": "lan1-DownstreamXMLSend[0]"
           }
         ],
         "Backlog": 100,
         "Port": 50100,
+        "IPAddress": "192.168.1.86",
+        "NICIndex": 0,
+        "LoggingLevel": 0,
+        "SubscriptionsControlConnect": true,
+        "AllowedList": []
+      },
+      {
+        "Guid": "70363571-5b6e-4a91-b6c8-994db53437e5",
+        "ReadEvent": {
+          "Guid": "70363571-5b6e-4a91-b6c8-994db53437e5",
+          "Id": "RemoteConfigXMLRead",
+          "Description": "Socket HERMES-9852 Remote Configuration",
+          "Group": "",
+          "Subjects": [
+            "xml"
+          ],
+          "Keys": [
+            "xml"
+          ]
+        },
+        "WriteSubscriptions": [
+          {
+            "Guid": "f496672a-e78e-4bd3-97f9-0d7f23c2575f",
+            "Id": "RemoteConfigXMLSend[0]"
+          }
+        ],
+        "Backlog": 100,
+        "Port": 1248,
+        "IPAddress": "192.168.1.86",
+        "NICIndex": 0,
+        "LoggingLevel": 0,
+        "SubscriptionsControlConnect": true,
+        "AllowedList": []
+      },
+      {
+        "Guid": "68356291-6ffe-41ad-9864-613e92274ce6",
+        "ReadEvent": {
+          "Guid": "68356291-6ffe-41ad-9864-613e92274ce6",
+          "Id": "SupervisoryXMLRead",
+          "Description": "Socket HERMES-9852 Supervisory System",
+          "Group": "",
+          "Subjects": [
+            "xml"
+          ],
+          "Keys": [
+            "xml"
+          ]
+        },
+        "WriteSubscriptions": [
+          {
+            "Guid": "94a26f8e-e4ad-470f-95e4-464828afeb2f",
+            "Id": "SupervisoryXMLSend[0]"
+          }
+        ],
+        "Backlog": 100,
+        "Port": 50200,
         "IPAddress": "192.168.1.86",
         "NICIndex": 0,
         "LoggingLevel": 0,
@@ -48,7 +105,7 @@
         },
         "WriteSubscriptions": [
           {
-            "Guid": "0b535bdf-f2eb-44d1-9ecf-523b9634415a",
+            "Guid": "7a6ddf80-d516-453e-801a-d87517b4df08",
             "Id": "lan1-UpstreamXMLSend[0]"
           }
         ],

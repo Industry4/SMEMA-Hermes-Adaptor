@@ -1,12 +1,14 @@
 {
   "assembly": "MultiPlug.Ext.SerialPort",
+  "version": "1.0.3.0",
   "properties": {
     "SerialPorts": [
       {
         "Guid": "de288aa1-17d3-4b95-9ced-baae0951ef61",
         "LoggingLevel": 0,
+        "LoggingShowControlCharacters": false,
         "ReadEvent": {
-          "Guid": "5e0e74cd-167b-4e09-bd56-9340db68836a",
+          "Guid": "2d2ab4ff-04b5-4180-ab5e-5ec949bd656b",
           "Id": "SerialPort-Adaptor",
           "Description": "Adaptor Serial Port Read",
           "Group": "",

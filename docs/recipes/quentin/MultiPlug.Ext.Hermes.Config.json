@@ -1,0 +1,28 @@
+{
+  "assembly": "MultiPlug.Ext.Hermes.Config",
+  "version": "1.0.1.0",
+  "properties": {
+    "RemoteConfiguration": {
+      "Deserialiser": {
+        "ReadMessageSubscription": {
+          "Guid": "0c16defd-58d2-49a6-b3e8-0d6307b3a189",
+          "Id": "RemoteConfigXMLRead[0]"
+        }
+      },
+      "Serialiser": {
+        "WriteMessageEvent": {
+          "Guid": "3bf090d0-8714-41ee-b748-5fbea72d37e8",
+          "Id": "RemoteConfigXMLSend",
+          "Description": "Outbound Messages",
+          "Group": "Global",
+          "Subjects": [
+            "xml"
+          ],
+          "Keys": [
+            "xml"
+          ]
+        }
+      }
+    }
+  }
+}

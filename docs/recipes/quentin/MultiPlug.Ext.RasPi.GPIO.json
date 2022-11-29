@@ -1,5 +1,6 @@
 {
   "assembly": "MultiPlug.Ext.RasPi.GPIO",
+  "version": "1.0.16.0",
   "properties": {
     "RaspberryPi": {
       "GPIO": [
@@ -9,10 +10,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 3,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "47063cd2-13be-4adb-8258-5e7f00bcca32",
+            "Guid": "92d98aca-feb5-42c9-b508-4eb735966965",
             "Id": "591d8c0a-7ac4-4a11-b029-e9881e73afe5",
             "Description": "SMEMA Lane 2 Port A Good PCB",
             "Group": "",
@@ -31,10 +33,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 3,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "b5b79b57-ebea-42da-b5a8-7788e15ba64e",
+            "Guid": "62b36255-1653-413c-89c2-0216f59bcbd2",
             "Id": "c982c9e6-58ac-4744-beb7-f5c817553cbb",
             "Description": "SMEMA Lane 2 Port A Bad PCB",
             "Group": "",
@@ -53,10 +56,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 0,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "fb8713bb-bf31-47cf-ab02-cf6a127f64a6",
+            "Guid": "88f82688-1fa2-414f-848c-210f2352e783",
             "Id": "3317939f-4792-41be-aaa6-e4f5102e205a",
             "Description": "BCM Pin: 7",
             "Group": "",
@@ -75,10 +79,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 0,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "4d25e969-5222-4e75-be3a-d2271f75e0a4",
+            "Guid": "15dcd34b-4999-4b17-a963-d30229a07e82",
             "Id": "a4eadffb-4d3d-44f1-844b-05077654ab9e",
             "Description": "BCM Pin: 8",
             "Group": "",
@@ -97,10 +102,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 0,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "715ea3d4-9045-4436-9b9a-96baa3242fc7",
+            "Guid": "0ebf483b-ccc0-4777-91fb-1e8af9a21f8e",
             "Id": "4a2d079a-c022-43a1-836c-aa0a70439ea4",
             "Description": "BCM Pin: 9",
             "Group": "",
@@ -119,10 +125,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 0,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "fb999a40-9916-4c27-ae4c-9ce37887b736",
+            "Guid": "f5e8bc94-3f68-4a68-9d5f-8ad497abdb24",
             "Id": "e5dc7cd1-0bff-4a0d-bd65-079fa2f25a1a",
             "Description": "BCM Pin: 10",
             "Group": "",
@@ -141,10 +148,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 0,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "1f7963a9-b92b-4ff8-8654-bbef6ae30a26",
+            "Guid": "dabe15a9-aed3-4e57-a131-cadd04a05363",
             "Id": "7c471abf-6c2e-48a8-9e4c-81812df3d413",
             "Description": "BCM Pin: 11",
             "Group": "",
@@ -163,10 +171,11 @@
           "PullMode": 0,
           "InitState": 1,
           "ShutdownState": 3,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "6893c61d-9b28-4855-bbb8-c3782286d1b3",
+            "Guid": "93bf8586-eb21-44a2-b24b-90954ea27b2f",
             "Id": "a5ad188a-1c3c-49f5-a8ad-a200be4b315b",
             "Description": "Status LED Red",
             "Group": "",
@@ -179,20 +188,20 @@
           },
           "Subscriptions": [
             {
-              "High": "",
+              "High": "1",
               "Low": "Good",
               "Guid": "bad87abe-6fcf-4866-b77c-e256aa3037df",
               "Id": "Global-Status-Good[0]"
             },
             {
               "High": "Warm",
-              "Low": "",
+              "Low": "0",
               "Guid": "0d1e057c-c355-4e08-bfaa-c3745b565574",
               "Id": "Global-Status-Warn[0]"
             },
             {
               "High": "Alarm",
-              "Low": "",
+              "Low": "0",
               "Guid": "d233f8f2-04f3-48c6-8eb6-2d1ab662fabb",
               "Id": "Global-Status-Alarm[0]"
             }
@@ -204,10 +213,11 @@
           "PullMode": 0,
           "InitState": 3,
           "ShutdownState": 3,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "dec4dff4-7dff-485a-8410-a8219e345e55",
+            "Guid": "1388372c-f5ba-4365-b5d3-494310a0b8f0",
             "Id": "2bc0b69e-c2dd-4e1c-9150-9f8c6e143811",
             "Description": "Status LED Green",
             "Group": "",
@@ -221,18 +231,18 @@
           "Subscriptions": [
             {
               "High": "Good",
-              "Low": "",
+              "Low": "0",
               "Guid": "43e6024e-d7ad-4ce4-83b7-8c1b2882bda0",
               "Id": "Global-Status-Good[0]"
             },
             {
               "High": "Warn",
-              "Low": "",
+              "Low": "0",
               "Guid": "c0c4ccff-3099-4fca-84ba-80bcdca95232",
               "Id": "Global-Status-Warn[0]"
             },
             {
-              "High": "",
+              "High": "1",
               "Low": "Alarm",
               "Guid": "829350d7-2603-4641-9034-842d35ad0a53",
               "Id": "Global-Status-Alarm[0]"
@@ -245,10 +255,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 0,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "ed7a3815-87bd-4979-9c61-622cfabe1f6a",
+            "Guid": "f7ef1997-9cbf-403f-bd1c-f6df22b0f282",
             "Id": "c88e2085-9ce1-4fe4-88e5-58e98cb95042",
             "Description": "BUZZER",
             "Group": "",
@@ -267,10 +278,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 0,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "9941622b-2345-4d28-8df9-54ecc0da69c7",
+            "Guid": "e8cb3dab-88ac-491c-aff3-967b25707134",
             "Id": "SMEMA-1-B-2",
             "Description": "SMEMA Lane 1 Port B Good PCB",
             "Group": "",
@@ -289,10 +301,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 3,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "182c98e3-896d-47ae-9130-216c73139982",
+            "Guid": "3d9b1ffe-6c0d-4d54-9496-575f9cc338d9",
             "Id": "19",
             "Description": "SMEMA Lane 2 Port B Machine Ready",
             "Group": "",
@@ -311,10 +324,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 3,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "ae25eaa5-c0f7-422f-a0e5-d5c43c81957c",
+            "Guid": "8330761f-1c1f-4d96-8eb2-aac08e1150f0",
             "Id": "a23adb8e-b8c8-4b45-b544-ed71a5d64887",
             "Description": "SMEMA Lane 1 Port A Bad PCB",
             "Group": "",
@@ -327,7 +341,6 @@
           },
           "Subscriptions": [
             {
-              "KeyId": "value",
               "High": "1",
               "Low": "0",
               "Guid": "e05eec4a-290e-4757-8247-4f3736885acd",
@@ -341,10 +354,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 3,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "deee86b2-cc93-4beb-a5cb-e1223de126c8",
+            "Guid": "091579ce-0863-491b-a23a-816059c7482e",
             "Id": "41ee7918-6644-49dc-94c7-a10228894635",
             "Description": "SMEMA Lane 1 Port A Good PCB",
             "Group": "",
@@ -357,7 +371,6 @@
           },
           "Subscriptions": [
             {
-              "KeyId": "value",
               "High": "1",
               "Low": "0",
               "Guid": "91054c97-735b-4f28-9eeb-ee7bd6c75edc",
@@ -371,10 +384,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 0,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "c4b7f6e4-e43c-45b8-b4b4-d5572d6bef2a",
+            "Guid": "fe6ff714-94cd-4d03-a8be-aeab7172fad4",
             "Id": "SMEMA-1-A-1",
             "Description": "SMEMA Lane 1 Port A Machine Ready",
             "Group": "",
@@ -393,10 +407,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 0,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "01af3384-50bb-45a0-8f72-6fbaeb9ba1f5",
+            "Guid": "09977db6-fdff-4a2c-9c0e-9a1d51a66f75",
             "Id": "SMEMA-2-B-2",
             "Description": "SMEMA Lane 2 Port B Good PCB",
             "Group": "",
@@ -415,10 +430,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 0,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "27838b64-b9c0-4683-9bd7-6e344c4b4bbe",
+            "Guid": "7f1ea0d2-7165-473f-b2a8-4249661459a1",
             "Id": "SMEMA-2-B-3",
             "Description": "SMEMA Lane 2 Port B Bad PCB",
             "Group": "",
@@ -437,10 +453,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 0,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "b4962194-7e40-4b4c-bab3-f8ed4b93d9ac",
+            "Guid": "ac95dfee-2962-4d0c-bab1-c9b472c45f0c",
             "Id": "SMEMA-2-A-1",
             "Description": "SMEMA Lane 2 Port A Machine Ready",
             "Group": "",
@@ -459,10 +476,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 3,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "beee7868-6f46-4f66-bb5a-1e9c9afb3586",
+            "Guid": "750a7284-3d33-47d6-887f-f593963615a3",
             "Id": "6157b263-1416-4869-b073-421794c304a5",
             "Description": "SMEMA Lane 1 Port B Machine Ready",
             "Group": "",
@@ -475,7 +493,6 @@
           },
           "Subscriptions": [
             {
-              "KeyId": "value",
               "High": "1",
               "Low": "0",
               "Guid": "cbf6c84f-617a-4e9f-938d-fb227f903218",
@@ -489,10 +506,11 @@
           "PullMode": 0,
           "InitState": 0,
           "ShutdownState": 0,
+          "Debounce": 40,
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "e4048d3f-c999-454a-bd25-9fc7b93095f5",
+            "Guid": "776d1a9b-8afa-462d-9b7e-9f35f41654e1",
             "Id": "SMEMA-1-B-3",
             "Description": "SMEMA Lane 1 Port B Bad PCB",
             "Group": "",
