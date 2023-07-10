@@ -14,7 +14,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "92d98aca-feb5-42c9-b508-4eb735966965",
+            "Guid": "1a9e05c9-d7fe-47a1-a669-c80cd04d7ff8",
             "Id": "591d8c0a-7ac4-4a11-b029-e9881e73afe5",
             "Description": "SMEMA Lane 2 Port A Good PCB",
             "Group": "",
@@ -37,7 +37,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "62b36255-1653-413c-89c2-0216f59bcbd2",
+            "Guid": "bdbfcbb8-7411-401b-938a-3a1953222b81",
             "Id": "c982c9e6-58ac-4744-beb7-f5c817553cbb",
             "Description": "SMEMA Lane 2 Port A Bad PCB",
             "Group": "",
@@ -60,7 +60,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "88f82688-1fa2-414f-848c-210f2352e783",
+            "Guid": "3a923c6d-f19a-4ef3-bf7a-b3272f93d378",
             "Id": "3317939f-4792-41be-aaa6-e4f5102e205a",
             "Description": "BCM Pin: 7",
             "Group": "",
@@ -83,7 +83,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "15dcd34b-4999-4b17-a963-d30229a07e82",
+            "Guid": "61c6d229-727a-41b2-888d-29247b6b2e30",
             "Id": "a4eadffb-4d3d-44f1-844b-05077654ab9e",
             "Description": "BCM Pin: 8",
             "Group": "",
@@ -106,7 +106,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "0ebf483b-ccc0-4777-91fb-1e8af9a21f8e",
+            "Guid": "13489156-665e-4f6a-aa0f-dfa7e554d20c",
             "Id": "4a2d079a-c022-43a1-836c-aa0a70439ea4",
             "Description": "BCM Pin: 9",
             "Group": "",
@@ -129,7 +129,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "f5e8bc94-3f68-4a68-9d5f-8ad497abdb24",
+            "Guid": "acc1cc3e-933c-42d9-a720-9d41f40f4de0",
             "Id": "e5dc7cd1-0bff-4a0d-bd65-079fa2f25a1a",
             "Description": "BCM Pin: 10",
             "Group": "",
@@ -152,7 +152,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "dabe15a9-aed3-4e57-a131-cadd04a05363",
+            "Guid": "39b43862-c5e6-439c-8cef-4751e27cbbf5",
             "Id": "7c471abf-6c2e-48a8-9e4c-81812df3d413",
             "Description": "BCM Pin: 11",
             "Group": "",
@@ -175,7 +175,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "93bf8586-eb21-44a2-b24b-90954ea27b2f",
+            "Guid": "c5824a1c-e630-45d0-9add-3288fcee8270",
             "Id": "a5ad188a-1c3c-49f5-a8ad-a200be4b315b",
             "Description": "Status LED Red",
             "Group": "",
@@ -217,7 +217,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "1388372c-f5ba-4365-b5d3-494310a0b8f0",
+            "Guid": "e1fa3808-2e70-42ce-a668-b503b34e09a5",
             "Id": "2bc0b69e-c2dd-4e1c-9150-9f8c6e143811",
             "Description": "Status LED Green",
             "Group": "",
@@ -259,7 +259,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "f7ef1997-9cbf-403f-bd1c-f6df22b0f282",
+            "Guid": "aca2dccc-4991-4d62-a759-8596e8f67dd8",
             "Id": "c88e2085-9ce1-4fe4-88e5-58e98cb95042",
             "Description": "BUZZER",
             "Group": "",
@@ -282,7 +282,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "e8cb3dab-88ac-491c-aff3-967b25707134",
+            "Guid": "77cd4410-764a-4cb2-89a6-0005d60083df",
             "Id": "SMEMA-1-B-2",
             "Description": "SMEMA Lane 1 Port B Good PCB",
             "Group": "",
@@ -305,7 +305,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "3d9b1ffe-6c0d-4d54-9496-575f9cc338d9",
+            "Guid": "a82d9d08-c876-4607-9953-7427c431c669",
             "Id": "19",
             "Description": "SMEMA Lane 2 Port B Machine Ready",
             "Group": "",
@@ -328,7 +328,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "8330761f-1c1f-4d96-8eb2-aac08e1150f0",
+            "Guid": "3f6f31ec-540a-4c6f-8d47-3baf81bddb92",
             "Id": "a23adb8e-b8c8-4b45-b544-ed71a5d64887",
             "Description": "SMEMA Lane 1 Port A Bad PCB",
             "Group": "",
@@ -358,7 +358,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "091579ce-0863-491b-a23a-816059c7482e",
+            "Guid": "5cdc49a9-3b92-4b61-8501-655ce5a552db",
             "Id": "41ee7918-6644-49dc-94c7-a10228894635",
             "Description": "SMEMA Lane 1 Port A Good PCB",
             "Group": "",
@@ -388,7 +388,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "fe6ff714-94cd-4d03-a8be-aeab7172fad4",
+            "Guid": "ff4c506f-4070-48c4-9980-ef255de68a4b",
             "Id": "SMEMA-1-A-1",
             "Description": "SMEMA Lane 1 Port A Machine Ready",
             "Group": "",
@@ -411,7 +411,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "09977db6-fdff-4a2c-9c0e-9a1d51a66f75",
+            "Guid": "bb50e002-cd5f-4bbc-b240-76d2699f6997",
             "Id": "SMEMA-2-B-2",
             "Description": "SMEMA Lane 2 Port B Good PCB",
             "Group": "",
@@ -434,7 +434,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "7f1ea0d2-7165-473f-b2a8-4249661459a1",
+            "Guid": "474c4a47-36a3-4b21-8cdd-c1b3eca4357c",
             "Id": "SMEMA-2-B-3",
             "Description": "SMEMA Lane 2 Port B Bad PCB",
             "Group": "",
@@ -457,7 +457,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "ac95dfee-2962-4d0c-bab1-c9b472c45f0c",
+            "Guid": "9858a159-1186-492a-b6ba-3b07332082e5",
             "Id": "SMEMA-2-A-1",
             "Description": "SMEMA Lane 2 Port A Machine Ready",
             "Group": "",
@@ -480,7 +480,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "750a7284-3d33-47d6-887f-f593963615a3",
+            "Guid": "f15f94e9-0e25-4f73-9079-e0a50025c582",
             "Id": "6157b263-1416-4869-b073-421794c304a5",
             "Description": "SMEMA Lane 1 Port B Machine Ready",
             "Group": "",
@@ -510,7 +510,7 @@
           "Event": {
             "HighValue": "1",
             "LowValue": "0",
-            "Guid": "776d1a9b-8afa-462d-9b7e-9f35f41654e1",
+            "Guid": "9b9d57a4-adfc-476a-8724-b155e6f960ea",
             "Id": "SMEMA-1-B-3",
             "Description": "SMEMA Lane 1 Port B Bad PCB",
             "Group": "",

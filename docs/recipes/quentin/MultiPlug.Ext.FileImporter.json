@@ -1,0 +1,59 @@
+{
+  "assembly": "MultiPlug.Ext.FileImporter",
+  "version": "1.0.2.0",
+  "properties": {
+    "Files": [
+      {
+        "Guid": "8c6693ef",
+        "Type": "Hermes Data File",
+        "RowEvent": {
+          "Guid": "f2894982-1df3-46fa-be9a-a1ed1674d8a6",
+          "Id": "RowRead-8c6693ef",
+          "Description": "Row of the file type Hermes Data File",
+          "Group": "",
+          "Subjects": [
+            "Board ID",
+            "Board ID Created By",
+            "Failed Board",
+            "Product Type ID",
+            "Flipped Board",
+            "Top Barcode",
+            "Bottom Barcode",
+            "Length",
+            "Width",
+            "Thickness",
+            "Conveyor Speed",
+            "Top Clearance Height",
+            "Bottom Clearance Height",
+            "Weight",
+            "Work Order ID",
+            "Batch ID",
+            "Route",
+            "Action"
+          ],
+          "Keys": [
+            "Board ID",
+            "Board ID Created By",
+            "Failed Board",
+            "Product Type ID",
+            "Flipped Board",
+            "Top Barcode",
+            "Bottom Barcode",
+            "Length",
+            "Width",
+            "Thickness",
+            "Conveyor Speed",
+            "Top Clearance Height",
+            "Bottom Clearance Height",
+            "Weight",
+            "Work Order ID",
+            "Batch ID",
+            "Route",
+            "Action"
+          ]
+        },
+        "Skip": 1
+      }
+    ]
+  }
+}

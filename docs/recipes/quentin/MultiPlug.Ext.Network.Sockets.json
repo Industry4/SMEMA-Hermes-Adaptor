@@ -19,13 +19,17 @@
         },
         "WriteSubscriptions": [
           {
-            "Guid": "67545bfb-0914-4a83-9efd-19807c497f4e",
+            "Guid": "45112e5c-4bcf-471a-bcee-3409526f55fa",
+            "Id": "lan1-DownstreamXMLSend[0]"
+          },
+          {
+            "Guid": "9be5244b-d194-4578-aa37-73e282cc94b0",
             "Id": "lan1-DownstreamXMLSend[0]"
           }
         ],
         "Backlog": 100,
         "Port": 50100,
-        "IPAddress": "192.168.1.86",
+        "IPAddress": "192.168.1.13",
         "NICIndex": 0,
         "LoggingLevel": 0,
         "SubscriptionsControlConnect": true,
@@ -47,13 +51,17 @@
         },
         "WriteSubscriptions": [
           {
-            "Guid": "f496672a-e78e-4bd3-97f9-0d7f23c2575f",
+            "Guid": "b9421e6e-2fa7-46b0-b996-0789f269d042",
+            "Id": "RemoteConfigXMLSend[0]"
+          },
+          {
+            "Guid": "7bfaf702-315b-4671-b4dd-46e4d59e3355",
             "Id": "RemoteConfigXMLSend[0]"
           }
         ],
         "Backlog": 100,
         "Port": 1248,
-        "IPAddress": "192.168.1.86",
+        "IPAddress": "192.168.1.13",
         "NICIndex": 0,
         "LoggingLevel": 0,
         "SubscriptionsControlConnect": true,
@@ -75,13 +83,17 @@
         },
         "WriteSubscriptions": [
           {
-            "Guid": "94a26f8e-e4ad-470f-95e4-464828afeb2f",
+            "Guid": "788e1966-8535-45f6-9a91-5de0cb6db4e4",
+            "Id": "SupervisoryXMLSend[0]"
+          },
+          {
+            "Guid": "18a750be-a736-44f8-b385-1ffdcf8d0435",
             "Id": "SupervisoryXMLSend[0]"
           }
         ],
         "Backlog": 100,
         "Port": 50200,
-        "IPAddress": "192.168.1.86",
+        "IPAddress": "192.168.1.13",
         "NICIndex": 0,
         "LoggingLevel": 0,
         "SubscriptionsControlConnect": true,
@@ -105,7 +117,11 @@
         },
         "WriteSubscriptions": [
           {
-            "Guid": "7a6ddf80-d516-453e-801a-d87517b4df08",
+            "Guid": "120ef426-60e5-4ffb-a754-c3f4db9d05d8",
+            "Id": "lan1-UpstreamXMLSend[0]"
+          },
+          {
+            "Guid": "10de3ba6-c8a4-4b27-9fc7-75f9b7a6c97e",
             "Id": "lan1-UpstreamXMLSend[0]"
           }
         ],

@@ -1,6 +1,6 @@
 {
   "assembly": "MultiPlug.Ext.SerialPort",
-  "version": "1.0.3.0",
+  "version": "1.0.4.0",
   "properties": {
     "SerialPorts": [
       {
@@ -8,7 +8,7 @@
         "LoggingLevel": 0,
         "LoggingShowControlCharacters": false,
         "ReadEvent": {
-          "Guid": "2d2ab4ff-04b5-4180-ab5e-5ec949bd656b",
+          "Guid": "17293982-aced-4036-b1fe-1d4e998bdf97",
           "Id": "SerialPort-Adaptor",
           "Description": "Adaptor Serial Port Read",
           "Group": "",
@@ -39,6 +39,7 @@
         "ReadAppend": "",
         "Enabled": true,
         "WritePrefix": "",
+        "WriteSeparator": null,
         "WriteAppend": ""
       }
     ]
