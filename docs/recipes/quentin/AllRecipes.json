@@ -23,15 +23,11 @@
 							{
 								"Guid": "45112e5c-4bcf-471a-bcee-3409526f55fa",
 								"Id": "lan1-DownstreamXMLSend[0]"
-							},
-							{
-								"Guid": "9be5244b-d194-4578-aa37-73e282cc94b0",
-								"Id": "lan1-DownstreamXMLSend[0]"
 							}
 						],
 						"Backlog": 100,
 						"Port": 50100,
-						"IPAddress": "192.168.1.13",
+						"IPAddress": "0.0.0.0",
 						"NICIndex": 0,
 						"LoggingLevel": 0,
 						"SubscriptionsControlConnect": true,
@@ -55,15 +51,11 @@
 							{
 								"Guid": "b9421e6e-2fa7-46b0-b996-0789f269d042",
 								"Id": "RemoteConfigXMLSend[0]"
-							},
-							{
-								"Guid": "7bfaf702-315b-4671-b4dd-46e4d59e3355",
-								"Id": "RemoteConfigXMLSend[0]"
 							}
 						],
 						"Backlog": 100,
 						"Port": 1248,
-						"IPAddress": "192.168.1.13",
+						"IPAddress": "0.0.0.0",
 						"NICIndex": 0,
 						"LoggingLevel": 0,
 						"SubscriptionsControlConnect": true,
@@ -87,15 +79,11 @@
 							{
 								"Guid": "788e1966-8535-45f6-9a91-5de0cb6db4e4",
 								"Id": "SupervisoryXMLSend[0]"
-							},
-							{
-								"Guid": "18a750be-a736-44f8-b385-1ffdcf8d0435",
-								"Id": "SupervisoryXMLSend[0]"
 							}
 						],
 						"Backlog": 100,
 						"Port": 50200,
-						"IPAddress": "192.168.1.13",
+						"IPAddress": "0.0.0.0",
 						"NICIndex": 0,
 						"LoggingLevel": 0,
 						"SubscriptionsControlConnect": true,
@@ -120,10 +108,6 @@
 						"WriteSubscriptions": [
 							{
 								"Guid": "120ef426-60e5-4ffb-a754-c3f4db9d05d8",
-								"Id": "lan1-UpstreamXMLSend[0]"
-							},
-							{
-								"Guid": "10de3ba6-c8a4-4b27-9fc7-75f9b7a6c97e",
 								"Id": "lan1-UpstreamXMLSend[0]"
 							}
 						],
