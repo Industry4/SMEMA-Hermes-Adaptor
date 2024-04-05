@@ -330,7 +330,7 @@ button::-moz-focus-inner {
     .mfp-iframe-holder .mfp-content {
         line-height: 0;
         width: 100%;
-        max-width: 900px;
+        max-width: 1096px;
     }
 
     .mfp-iframe-holder .mfp-close {
