@@ -125,6 +125,11 @@ a, [data-href] {
     a[data-toggle], a[data-anima] {
         display: inline-block;
     }
+	
+.maincontent a:link, .maincontent a:visited, .maincontent a:hover, .maincontent a:active {
+    color: green;
+    text-decoration:underline;
+}
 
 body .row-1 {
     height: 25px !important;
