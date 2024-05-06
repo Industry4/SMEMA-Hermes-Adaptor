@@ -1,0 +1,172 @@
+{
+  "assembly": "MultiPlug.Ext.Network.Sockets",
+  "version": "1.0.13.0",
+  "properties": {
+    "SocketEndpoints": [
+      {
+        "Guid": "f0ee4750-c7ba-4f2c-ae9e-1d933da30f7b",
+        "ReadEvent": {
+          "Guid": "f0ee4750-c7ba-4f2c-ae9e-1d933da30f7b",
+          "Id": "Socket-Lane1DownstreamXMLRead",
+          "Description": "Socket Downstream Read for Lane 1",
+          "Group": "",
+          "Subjects": [
+            "xml"
+          ],
+          "Keys": [
+            "xml"
+          ]
+        },
+        "WriteSubscriptions": [
+          {
+            "Guid": "45112e5c-4bcf-471a-bcee-3409526f55fa",
+            "Id": "lan1-DownstreamXMLSend[0]"
+          }
+        ],
+        "Backlog": 100,
+        "Port": 50100,
+        "IPAddress": "192.168.1.23",
+        "NICIndex": 0,
+        "LoggingLevel": 0,
+        "SubscriptionsControlConnect": true,
+        "AllowedList": []
+      },
+      {
+        "Guid": "70363571-5b6e-4a91-b6c8-994db53437e5",
+        "ReadEvent": {
+          "Guid": "70363571-5b6e-4a91-b6c8-994db53437e5",
+          "Id": "RemoteConfigXMLRead",
+          "Description": "Socket HERMES-9852 Remote Configuration",
+          "Group": "",
+          "Subjects": [
+            "xml"
+          ],
+          "Keys": [
+            "xml"
+          ]
+        },
+        "WriteSubscriptions": [
+          {
+            "Guid": "b9421e6e-2fa7-46b0-b996-0789f269d042",
+            "Id": "RemoteConfigXMLSend[0]"
+          }
+        ],
+        "Backlog": 100,
+        "Port": 1248,
+        "IPAddress": "192.168.1.23",
+        "NICIndex": 0,
+        "LoggingLevel": 0,
+        "SubscriptionsControlConnect": true,
+        "AllowedList": []
+      },
+      {
+        "Guid": "68356291-6ffe-41ad-9864-613e92274ce6",
+        "ReadEvent": {
+          "Guid": "68356291-6ffe-41ad-9864-613e92274ce6",
+          "Id": "SupervisoryXMLRead",
+          "Description": "Socket HERMES-9852 Supervisory System",
+          "Group": "",
+          "Subjects": [
+            "xml"
+          ],
+          "Keys": [
+            "xml"
+          ]
+        },
+        "WriteSubscriptions": [
+          {
+            "Guid": "788e1966-8535-45f6-9a91-5de0cb6db4e4",
+            "Id": "SupervisoryXMLSend[0]"
+          }
+        ],
+        "Backlog": 100,
+        "Port": 50200,
+        "IPAddress": "192.168.1.23",
+        "NICIndex": 0,
+        "LoggingLevel": 0,
+        "SubscriptionsControlConnect": true,
+        "AllowedList": []
+      },
+      {
+        "Guid": "dc03b43e-d749-4132-9a07-a778707f8245",
+        "ReadEvent": {
+          "Guid": "dc03b43e-d749-4132-9a07-a778707f8245",
+          "Id": "Socket-Lane2DownstreamXMLRead",
+          "Description": "Socket Downstream Read for Lane 2",
+          "Group": "",
+          "Subjects": [
+            "value"
+          ],
+          "Keys": [
+            "value"
+          ]
+        },
+        "WriteSubscriptions": [
+          {
+            "Guid": "937b212e-21ff-4709-95a7-e7a8877458a7",
+            "Id": "lan2-DownstreamXMLSend[0]"
+          }
+        ],
+        "Backlog": 100,
+        "Port": 50300,
+        "IPAddress": "192.168.1.23",
+        "NICIndex": 0,
+        "LoggingLevel": 0,
+        "SubscriptionsControlConnect": true,
+        "AllowedList": []
+      }
+    ],
+    "SocketClients": [
+      {
+        "Guid": "05a589c7-fca7-4f09-843e-22e1a4b3464b",
+        "ReadEvent": {
+          "Guid": "05a589c7-fca7-4f09-843e-22e1a4b3464b",
+          "Id": "Socket-Lane1UpstreamXMLRead",
+          "Description": "Socket Upstream Read for Lane 1",
+          "Group": "",
+          "Subjects": [
+            "xml"
+          ],
+          "Keys": [
+            "xml"
+          ]
+        },
+        "WriteSubscriptions": [
+          {
+            "Guid": "120ef426-60e5-4ffb-a754-c3f4db9d05d8",
+            "Id": "lan1-UpstreamXMLSend[0]"
+          }
+        ],
+        "HostName": "0.0.0.0",
+        "Port": 50100,
+        "LoggingLevel": 0,
+        "SubscriptionsControlConnect": true
+      },
+      {
+        "Guid": "634b2fb1-856a-4d95-a5d2-31a9bba21380",
+        "ReadEvent": {
+          "Guid": "634b2fb1-856a-4d95-a5d2-31a9bba21380",
+          "Id": "Socket-Lane2UpstreamXMLRead",
+          "Description": "Socket Upstream Read for Lane 2",
+          "Group": "",
+          "Subjects": [
+            "xml"
+          ],
+          "Keys": [
+            "xml"
+          ]
+        },
+        "WriteSubscriptions": [
+          {
+            "Guid": "e68f5b0a-4edf-4853-a90e-b69949f890a5",
+            "Id": "lan2-UpstreamXMLSend[0]"
+          }
+        ],
+        "HostName": "0.0.0.0",
+        "Port": 50200,
+        "LoggingLevel": 0,
+        "SubscriptionsControlConnect": true
+      }
+    ]
+  }
+}
