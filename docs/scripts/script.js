@@ -573,7 +573,7 @@ function isScrollView(t) {
             options["delegate"] = "a.img-box,.advs-box a:not(.img-box)";
             options["gallery"] = { enabled: 1 };
         }
-        if ((href.indexOf(".jpg") != -1) || (href.indexOf(".png") != -1)) options['type'] = 'image';
+        if ((href.indexOf(".jpg") != -1) || (href.indexOf(".png") != -1) || (href.indexOf(".gif") != -1)) options['type'] = 'image';
         if (href.indexOf("#") == 0) {
             options['type'] = 'inline';
             options['mainClass'] += ' box-inline';
