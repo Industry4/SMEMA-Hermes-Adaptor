@@ -2,7 +2,7 @@
 
 A compact and low cost solution to retrofit and extend the life of your SMEMA SMT electronic assembly equipment. Operating in more than 25 Countries.
 
-* Read the [Brochure Website](https://www.the-hermes-standard-smema-adaptor.info/) for a product overview.
+* View the [Brochure Website](https://www.the-hermes-standard-smema-adaptor.info/) for a product overview.
 * Read the [Wiki](https://github.com/Industry4/SMEMA-Hermes-Adaptor/wiki) for technical support.
 * Buy from a [Distributor](https://www.4ir.uk/products/distributors/).
 <p align="center">
