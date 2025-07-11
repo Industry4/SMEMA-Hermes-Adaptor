@@ -142,22 +142,57 @@ The non-Hermes compliant equipment will not have access to this Hermes Board Dat
             </div>
 			<hr class="space m" />
             <div class="row">
-                <div class="col-md-3">
-                    <h2>Use Case</h2>
+                <div class="col-md-4">
+                    <h2>Scenario 1 </br>Hermes Ready</h2>
+                    <p>You have purchased new equipment or your existing supplier has provided you with a <b>software upgrade</b> to support the Hermes Standard. Some or the rest of your production line is using SMEMA.</p>
                 </div>
-                <div class="col-md-9">
-                    <p><b>1.</b> The Adaptor has been initially created to <b>fill the void</b> of equipment that has historically had little intelligence therefore it becomes challenging to apply the Hermes Standard to it. This is commonly ‘dumb’ equipment such as <b>PCB Conveyors</b> that only currently work with SMEMA.</p>
-                    <p><b>2.</b> The second group is equipment that has fallen out of a service plan either by its age or due to second hand use, and so suppliers are <b>unwilling to upgrade</b> its control software.</p>
-                    <p><b>3.</b> Customers have been increasingly using the Adaptor to <b>Inject</b> and <b>Extract</b> Hermes Data at the Start and End of a production line, as well as adding new values such as Barcodes midway down a line.</p>
-                    <p><b>4.</b> <b>OEM Equipment Suppliers</b> have used the Adaptor to distance themselves from supporting a software standard that is currently a moving target. They directly connect the Adaptor to their PLCs (Programmable Logic Controller) and benefit from regular software upgrades and support.</p>
+                <div class="col-md-8">
+                    <a class="img-box thumbnail lightbox" href="images/hermes-standard-ready.jpg" title="The SMT equipment supports IPC-Hermes-9852 the Hermes Standard">
+                        <span><img src="images/hermes-standard-ready.jpg" alt="Diagram of a Hermes supported production line" title="The SMT equipment supports IPC-Hermes-9852 the Hermes Standard"></span>
+                    </a>
                 </div>
             </div>	
 			<hr class="space m" />
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
+                    <h2>Scenario 2 </br>Unsupported</h2>
+					<p>You are not able to upgrade your equipment due to a lack of vendor support or <b>financial costs</b> and are wishing to <b>extend the life</b> of your SMTA equipment.</p>
+                </div>
+                <div class="col-md-8">
+                    <a class="img-box thumbnail lightbox" href="images/unsupported-ipc-hermes-9852.jpg" title="The SMT equipment doesn't support IPC-Hermes-9852 the Hermes Standard">
+                        <span><img src="images/unsupported-ipc-hermes-9852.jpg" alt="Diagram of a Hermes unsupported production line" title="The SMT equipment doesn't support IPC-Hermes-9852 the Hermes Standard"></span>
+                    </a>
+                </div>
+            </div>	
+			<hr class="space m" />
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Scenario 3 </br>Data Manipulation</h2>
+                    <p>You wish to <b>Inject</b> Hermes Data at the Start, Midway, or <b>Extract</b> Hermes Data at the end of the production line using third party systems.</p>
+                </div>
+                <div class="col-md-8">
+                    <a class="img-box thumbnail lightbox" href="images/hermes-data-manipulation.jpg" title="Data is Injected or Extracted from a SMT production line">
+                        <span><img src="images/hermes-data-manipulation.jpg" alt="Diagram of a production line" title="Data is Injected or Extracted from a SMT production line"></span>
+                    </a>
+                </div>
+            </div>	
+			<hr class="space m" />
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Scenario 4 </br>OEM Integration</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>SMT Original Equipment Manufacturers have used the Adaptor to distance themselves from supporting a software standard that is <b>evolving yearly</b>. They directly connect the Adaptor to their PLCs (Programmable Logic Controller) and benefit from regular <b>software upgrades</b> and <b>support</b>. The software found on the Adaptor can also run on a <b>separate</b> computer such as a Raspberry Pi removing the need for SMEMA interfacing hardware and instead uses serial or other data interfaces.</p>
+                </div>
+            </div>					
+			
+			
+			<hr class="space m" />
+            <div class="row">
+                <div class="col-md-4">
                     <h2>First Steps</h2>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-8">
                     <p>We don't recommend using the Adaptor as your first step towards a full Hermes production line, you should instead <a href="https://www.the-hermes-standard.info/about-us/" target="_blank" title="The Hermes Standard Initiative Members">contact the suppliers</a> of your larger intelligent equipment and understand their timelines of upgrading your equipment's software.</p>
 					<p>Once you have <b>at least one</b> machine that supports the Hermes Standard you can then begin to inject Hermes Data into that machine by creating a <b>Scan Station</b> or Fetching the Hermes Data from a remote source. Often customers start with the <b>Stencil Printer</b> or <b>Pick &amp; Place</b> Machine. Please take a look at the <a href="https://www.the-hermes-standard.info/wp-content/uploads/The-Hermes-Standard-IT-Success-factors-20210228.pdf" target="_blank" title="Hermes IT Success Factors">IT Success Factors</a> document.</p>
                     <p>The Adaptor is a great tool to understand the Hermes Standard and how it will benefit your production by triggering a Smart Factory innovation drive.</p>
@@ -199,7 +234,7 @@ The non-Hermes compliant equipment will not have access to this Hermes Board Dat
 						<li>2GB RAM, 32GB Storage, Linux Single-Board Computer</li>				
                         <li>5 Volt Supply via USB-C - optional industrial 24v stepdown</li>
                         <li>RJ12 Plug to SMEMA Plug or Socket Dongles (optional accessory)</li>						
-                        <li>RS232 Serial Port for Conveyor Integration</li>
+                        <li>A RS232 Serial Port and 4x USB for Conveyor and Scanner Integration</li>
 						<li>SMEMA and Hermes status indicators</li>
 						<li>Real Time Clock for accurate data logging</li>
 						<li>WiFi Access Point for remote setup and monitoring</li>
