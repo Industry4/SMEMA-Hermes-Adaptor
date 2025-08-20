@@ -25,7 +25,14 @@
               "value"
             ]
           },
-          "Subscriptions": []
+          "Subscriptions": [
+            {
+              "High": "1",
+              "Low": "0",
+              "Guid": "169b8c96-d319-421b-8f4e-718ddb69fa0b",
+              "Id": "lan2-SMEMAGoodBoardReady[0]"
+            }
+          ]
         },
         {
           "BcmPinNumber": "6",
@@ -48,7 +55,14 @@
               "value"
             ]
           },
-          "Subscriptions": []
+          "Subscriptions": [
+            {
+              "High": "1",
+              "Low": "0",
+              "Guid": "c3c5c7e1-0673-47de-8279-6c889a3e7938",
+              "Id": "lan2-SMEMABadBoardReady[0]"
+            }
+          ]
         },
         {
           "BcmPinNumber": "7",
@@ -316,7 +330,14 @@
               "value"
             ]
           },
-          "Subscriptions": []
+          "Subscriptions": [
+            {
+              "High": "1",
+              "Low": "0",
+              "Guid": "5aa15539-3bf0-40b7-9d81-87508e72455b",
+              "Id": "lan2-SMEMAMachineReady[0]"
+            }
+          ]
         },
         {
           "BcmPinNumber": "20",
