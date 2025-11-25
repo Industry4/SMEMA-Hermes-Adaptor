@@ -1,0 +1,209 @@
+/*
+==============================
+TEMPLATE - TWOSIDE
+==============================
+*/
+.sec-twoside {
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+}
+
+    .sec-twoside .half-side {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+    }
+
+    .sec-twoside.fullscreen .half-side {
+        position: absolute;
+        width: 50%;
+        z-index: 35;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+.half-side.left {
+    left: 0;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.80);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.25) 0%,rgba(0, 0, 0, 0.25) 1%,rgba(0, 0, 0, 0.5) 50%,rgba(0, 0, 0, 0.75) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', endColorstr='#bf000000',GradientType=1 );
+    border-right: 1px solid rgba(77, 77, 77, 0.75);
+}
+
+.half-side.right {
+    right: 0;
+    background: rgba(0, 0, 0, 0.80);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%,rgba(0, 0, 0, 0.75) 1%,rgba(0, 0, 0, 0.5) 40%,rgba(0, 0, 0, 0.25) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#40000000',GradientType=1 );
+}
+
+.sec-twoside .content {
+    padding: 50px;
+    color: #EFEFEF;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.half-side .content {
+    position: relative;
+    z-index: 101;
+}
+
+.half-side h2 {
+    font-size: 14px;
+}
+
+.twoside-open hr {
+    position: absolute;
+    width: 36px;
+    margin: 8px 0px 0px -50px;
+    border-color: rgba(144, 144, 144, 0.75);
+    z-index: 36;
+}
+
+.twoside-open {
+    color: #FAFAFA;
+    cursor: pointer;
+    margin: 15px 0px;
+}
+
+    .twoside-open:hover {
+        opacity: 0.7;
+    }
+
+.section.center-box:not(.text-center) {
+    text-align: left;
+}
+
+.center-box .content {
+    padding: 0 50px;
+}
+
+.center-box, .center-bg {
+    width: 900px;
+    margin: auto;
+    position: absolute;
+    margin-left: -450px;
+    left: 50%;
+    height: 100%;
+    display: none;
+    vertical-align: middle;
+    text-align: center;
+    opacity: 0;
+    z-index: 5;
+}
+
+.center-bg {
+    background-color: black;
+    display: block;
+    opacity: 0;
+    z-index: 1;
+}
+
+.close-button {
+    background-image: url('../images/assets/x-close.png');
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    z-index: 27;
+    right: 50%;
+    margin-right: -19.5px;
+    top: 30px;
+    background-repeat: no-repeat;
+    display: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+@keyframes rotate-90 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.close-button:hover {
+    animation: rotate-90 .5s;
+    transform: rotate(90deg);
+    opacity: 0.8;
+}
+
+.page-template-template-twosides footer {
+    display: none;
+}
+/*
+==============================
+MOBILE - PHONE - Extra small devices
+==============================
+*/
+@media (max-width: 768px) {
+    .half-side.left {
+        text-align: center;
+        background: rgba(14, 14, 14, 0.75);
+    }
+
+    .sec-twoside .half-side {
+        position: relative;
+        width: 100%;
+        border: none !important;
+        margin: 0;
+    }
+
+        .sec-twoside .half-side > .row {
+            margin: 0;
+        }
+
+        .sec-twoside .half-side .text-right {
+            text-align: center !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+         .sec-twoside .half-side .pull-right {
+            float: none !important;
+        }
+        .sec-twoside .half-side .hc_column_cnt .col-md-3 {
+        }
+
+    .half-side.right {
+        display: none;
+    }
+
+    .half-side .content {
+        top: 0;
+        margin-top: 10px !important;
+    }
+
+    .center-box, .center-bg {
+        width: auto;
+        margin: auto;
+        position: relative;
+        margin-left: 0;
+        left: 0;
+        height: auto;
+        display: block;
+        opacity: 1;
+        padding: 0 15px;
+        background: rgba(14, 14, 14, 0.75);
+    }
+
+    .sec-twoside .content {
+        padding: 10px 0;
+        top: 0;
+        position: static;
+        margin-top: 0 !important;
+    }
+
+    .sec-twoside {
+        overflow: scroll;
+        position: static;
+        padding: 0 15px;
+    }
+}
